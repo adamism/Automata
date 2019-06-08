@@ -13,19 +13,20 @@ class R30CVViewController: UIViewController {
 	
 	@IBOutlet weak var collectionView: UICollectionView!
 	
+	private let cellID = "caCell"
 	private var itemsPerRow: Int = 40
 	private var numberOfRows: Int = 0
-	private let sectionInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
 	
 	override func viewDidLoad() {
+		AutomataCollectionViewCell.register(with: collectionView)
 		numberOfRows = itemsPerRow * (itemsPerRow / 2)
 	}
 }
 
+// MARK: - UICollectionViewDataSource -
 extension R30CVViewController: UICollectionViewDataSource {
-	
+
 	func numberOfSections(in collectionView: UICollectionView) -> Int {
-		//Ai: Consider adding a header supplementary view
 		return 1
 	}
 	
@@ -35,52 +36,47 @@ extension R30CVViewController: UICollectionViewDataSource {
 	}
 	
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "caCell", for: indexPath)
+		return cellFor(indexPath: indexPath)
+	}
+
+	// MARK: - UICollectionViewDataSoure Helpers -
+	private func cellFor(indexPath: IndexPath) -> UICollectionViewCell {
+		let cell = AutomataCollectionViewCell.dequeue(from: collectionView, at: indexPath)
 		
-		//Ai: This needs to be cleaned up/easier to digest
-		if indexPath.item < itemsPerRow, indexPath.item == itemsPerRow / 2 {
-			cell.backgroundColor = .black
-		} else if indexPath.item - itemsPerRow > 0 {
+		if isAfterFirstRow(indexPath: indexPath) {
 			let topCellIndexPath = IndexPath.init(item: indexPath.item - itemsPerRow, section: indexPath.section)
 			let topLeftCellIndexPath = IndexPath.init(item: topCellIndexPath.item - 1, section: topCellIndexPath.section)
 			let topRightCellIndexPath = IndexPath.init(item: topCellIndexPath.item + 1, section: topCellIndexPath.section)
 			
-			let topCell = collectionView.cellForItem(at: topCellIndexPath)!
-			let topLeftCell = collectionView.cellForItem(at: topLeftCellIndexPath)!
-			let topRightCell = collectionView.cellForItem(at: topRightCellIndexPath)!
+			let topCell = collectionView.cellForItem(at: topCellIndexPath) as! AutomataCollectionViewCell
+			let topLeftCell = collectionView.cellForItem(at: topLeftCellIndexPath) as! AutomataCollectionViewCell
+			let topRightCell = collectionView.cellForItem(at: topRightCellIndexPath) as! AutomataCollectionViewCell
 			
-			if isCellEnabled(cell: topLeftCell) != (isCellEnabled(cell: topCell) || isCellEnabled(cell: topRightCell)) {
-				cell.backgroundColor = .black
+			if topLeftCell.isActivated != (topCell.isActivated || topRightCell.isActivated) {
+				cell.isActivated = true
 			}
+		} else if isOriginCell(indexPath: indexPath) {
+			cell.isActivated = true
 		}
-		
-		
+
 		return cell
 	}
 	
-	private func isCellEnabled(cell: UICollectionViewCell) -> Bool {
-		//Ai: Make an extension of UICollectionViewCell?
-		return cell.backgroundColor == .black
+	private func isOriginCell(indexPath: IndexPath) -> Bool {
+		//OriginCell is the middle of the first row
+		return indexPath.item < itemsPerRow && indexPath.item == itemsPerRow / 2
+	}
+	
+	private func isAfterFirstRow(indexPath: IndexPath) -> Bool {
+		return indexPath.item - itemsPerRow > 0
 	}
 }
 
-extension R30CVViewController: UICollectionViewDelegate {
-	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-		print(indexPath.item + 1)
-	}
-}
-
+// MARK: - UICollectionViewDelegateFlowLayout -
 extension R30CVViewController : UICollectionViewDelegateFlowLayout {
+	
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 		let sizePerItem = view.frame.width / CGFloat(itemsPerRow)
 		return CGSize(width: sizePerItem, height: sizePerItem)
-	}
-	
-	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-		return sectionInsets
-	}
-	
-	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-		return sectionInsets.left
 	}
 }

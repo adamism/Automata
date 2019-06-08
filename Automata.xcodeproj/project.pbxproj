@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		01BC1FDF22ABF70F001F632D /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BC1FDE22ABF70F001F632D /* PageViewController.swift */; };
 		01BC1FE122ABFF8D001F632D /* R30CVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BC1FE022ABFF8D001F632D /* R30CVViewController.swift */; };
+		01BC1FE322AC0CA2001F632D /* AutomataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BC1FE222AC0CA2001F632D /* AutomataCollectionViewCell.swift */; };
 		01DA1CD322AAFE5B00158F6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA1CD222AAFE5B00158F6A /* AppDelegate.swift */; };
 		01DA1CD822AAFE5B00158F6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01DA1CD622AAFE5B00158F6A /* Main.storyboard */; };
 		01DA1CDB22AAFE5B00158F6A /* Automata.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 01DA1CD922AAFE5B00158F6A /* Automata.xcdatamodeld */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		01BC1FDE22ABF70F001F632D /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		01BC1FE022ABFF8D001F632D /* R30CVViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R30CVViewController.swift; sourceTree = "<group>"; };
+		01BC1FE222AC0CA2001F632D /* AutomataCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomataCollectionViewCell.swift; sourceTree = "<group>"; };
 		01DA1CCF22AAFE5B00158F6A /* Automata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Automata.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01DA1CD222AAFE5B00158F6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01DA1CD722AAFE5B00158F6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				01DA1CE122AAFE5C00158F6A /* Info.plist */,
 				01DA1CD922AAFE5B00158F6A /* Automata.xcdatamodeld */,
 				01BC1FDE22ABF70F001F632D /* PageViewController.swift */,
+				01BC1FE222AC0CA2001F632D /* AutomataCollectionViewCell.swift */,
 			);
 			path = Automata;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				01DA1CDB22AAFE5B00158F6A /* Automata.xcdatamodeld in Sources */,
 				01DA1CD322AAFE5B00158F6A /* AppDelegate.swift in Sources */,
 				01BC1FDF22ABF70F001F632D /* PageViewController.swift in Sources */,
+				01BC1FE322AC0CA2001F632D /* AutomataCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
