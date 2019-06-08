@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  R30CVViewController.swift
 //  Automata
 //
 //  Created by Ai on 6/7/19.
@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-class ViewController: UIViewController {
+class R30CVViewController: UIViewController {
 	
 	@IBOutlet weak var collectionView: UICollectionView!
 	
@@ -22,7 +22,7 @@ class ViewController: UIViewController {
 	}
 }
 
-extension ViewController: UICollectionViewDataSource {
+extension R30CVViewController: UICollectionViewDataSource {
 	
 	func numberOfSections(in collectionView: UICollectionView) -> Int {
 		//Ai: Consider adding a header supplementary view
@@ -64,13 +64,13 @@ extension ViewController: UICollectionViewDataSource {
 	}
 }
 
-extension ViewController: UICollectionViewDelegate {
+extension R30CVViewController: UICollectionViewDelegate {
 	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 		print(indexPath.item + 1)
 	}
 }
 
-extension ViewController : UICollectionViewDelegateFlowLayout {
+extension R30CVViewController : UICollectionViewDelegateFlowLayout {
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 		let sizePerItem = view.frame.width / CGFloat(itemsPerRow)
 		return CGSize(width: sizePerItem, height: sizePerItem)
