@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-class R30CVViewController: UIViewController {
+class R30ViewController: UIViewController {
 	
 	@IBOutlet weak var collectionView: UICollectionView!
 	
@@ -24,7 +24,7 @@ class R30CVViewController: UIViewController {
 }
 
 // MARK: - UICollectionViewDataSource -
-extension R30CVViewController: UICollectionViewDataSource {
+extension R30ViewController: UICollectionViewDataSource {
 
 	func numberOfSections(in collectionView: UICollectionView) -> Int {
 		return 1
@@ -73,7 +73,7 @@ extension R30CVViewController: UICollectionViewDataSource {
 }
 
 // MARK: - UICollectionViewDelegateFlowLayout -
-extension R30CVViewController : UICollectionViewDelegateFlowLayout {
+extension R30ViewController : UICollectionViewDelegateFlowLayout {
 	
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 		let sizePerItem = view.frame.width / CGFloat(itemsPerRow)

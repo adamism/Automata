@@ -18,16 +18,23 @@
             </objects>
             <point key="canvasLocation" x="-728" y="139"/>
         </scene>
-        <!--View Controller-->
+        <!--Intro View Controller-->
         <scene sceneID="oVq-aR-QS0">
             <objects>
-                <viewController storyboardIdentifier="readMe" id="Kzd-7j-EJG" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="readMe" id="Kzd-7j-EJG" customClass="IntroViewController" customModule="Automata" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rvi-yP-Whr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c1c-ni-ABP">
+                                <rect key="frame" x="182" y="428" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="WWX-3m-xxC"/>
+                                    <constraint firstAttribute="height" constant="50" id="h0B-0l-4Bw"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Readme!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MqK-Yn-qLI">
-                                <rect key="frame" x="146" y="429" width="123" height="39"/>
+                                <rect key="frame" x="146" y="131" width="123" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -35,6 +42,10 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="c1c-ni-ABP" firstAttribute="centerY" secondItem="G83-t5-JJ0" secondAttribute="centerY" id="Awy-pv-D9V"/>
+                            <constraint firstItem="c1c-ni-ABP" firstAttribute="centerX" secondItem="G83-t5-JJ0" secondAttribute="centerX" id="OzW-KM-esU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="G83-t5-JJ0"/>
                     </view>
                 </viewController>
@@ -45,7 +56,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="rule30CollectionView" id="BYZ-38-t0r" customClass="R30CVViewController" customModule="Automata" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="rule30CollectionView" id="BYZ-38-t0r" customClass="R30ViewController" customModule="Automata" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
