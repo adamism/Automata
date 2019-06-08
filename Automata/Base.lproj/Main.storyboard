@@ -26,16 +26,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c1c-ni-ABP">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="c1c-ni-ABP">
                                 <rect key="frame" x="182" y="428" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="WWX-3m-xxC"/>
                                     <constraint firstAttribute="height" constant="50" id="h0B-0l-4Bw"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Readme!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MqK-Yn-qLI">
-                                <rect key="frame" x="146" y="131" width="123" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Readme!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MqK-Yn-qLI">
+                                <rect key="frame" x="145.5" y="194" width="123" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -44,10 +43,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="c1c-ni-ABP" firstAttribute="centerY" secondItem="G83-t5-JJ0" secondAttribute="centerY" id="Awy-pv-D9V"/>
-                            <constraint firstItem="c1c-ni-ABP" firstAttribute="centerX" secondItem="G83-t5-JJ0" secondAttribute="centerX" id="OzW-KM-esU"/>
+                            <constraint firstItem="c1c-ni-ABP" firstAttribute="centerX" secondItem="G83-t5-JJ0" secondAttribute="centerX" priority="999" id="OzW-KM-esU"/>
+                            <constraint firstItem="MqK-Yn-qLI" firstAttribute="top" secondItem="G83-t5-JJ0" secondAttribute="top" constant="150" id="dgq-JH-yOk"/>
+                            <constraint firstItem="MqK-Yn-qLI" firstAttribute="centerX" secondItem="G83-t5-JJ0" secondAttribute="centerX" id="iWe-mz-pGu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="G83-t5-JJ0"/>
                     </view>
+                    <connections>
+                        <outlet property="logoImageView" destination="c1c-ni-ABP" id="U0k-s2-B0x"/>
+                        <outlet property="titleLabel" destination="MqK-Yn-qLI" id="Xdi-H8-WBr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J3a-fg-3qF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -56,7 +61,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="rule30CollectionView" id="BYZ-38-t0r" customClass="R30ViewController" customModule="Automata" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="rule30CollectionView" id="BYZ-38-t0r" customClass="R30V1ViewController" customModule="Automata" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -75,7 +80,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="caCell" id="4Ap-bg-BeC" customClass="AutomataCollectionViewCell" customModule="Automata" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="caCell" id="4Ap-bg-BeC" customClass="V1CollectionViewCell" customModule="Automata" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -89,14 +94,14 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="AmX-dv-YdB"/>
                                 </connections>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cellular Automata" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Oz-Hu-DpN">
-                                <rect key="frame" x="20" y="277.5" width="244" height="38.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rule 30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Oz-Hu-DpN">
+                                <rect key="frame" x="20" y="277" width="106.5" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adam Ismail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTf-WW-oex">
-                                <rect key="frame" x="20" y="316" width="93" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="v1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTf-WW-oex">
+                                <rect key="frame" x="20" y="316" width="17" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -125,26 +130,74 @@
         <!--View Controller-->
         <scene sceneID="0nP-Vs-NqW">
             <objects>
-                <viewController storyboardIdentifier="rule30Alt" id="mKj-3X-U76" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="rule30Alt" id="mKj-3X-U76" customClass="R30V2ViewController" customModule="Automata" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zP0-ii-rpg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rule30Alt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qN6-c2-LJf">
-                                <rect key="frame" x="138" y="429" width="138" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ufg-lL-10M">
+                                <rect key="frame" x="0.0" y="347" width="414" height="212"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="7NO-Ej-qkn"/>
+                                    <constraint firstAttribute="height" constant="212" id="KXK-s2-iwU"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="pL6-Fw-6bS">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="caCell" id="u5M-N2-IQw" customClass="V1CollectionViewCell" customModule="Automata" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="mKj-3X-U76" id="HM0-af-EuQ"/>
+                                    <outlet property="delegate" destination="mKj-3X-U76" id="nGw-Su-InT"/>
+                                </connections>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rule 30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14Q-Vg-13a">
+                                <rect key="frame" x="20" y="277" width="106.5" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="v2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5T-Wi-QCK">
+                                <rect key="frame" x="20" y="316" width="19" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="14Q-Vg-13a" firstAttribute="leading" secondItem="rGO-Cp-ffB" secondAttribute="leading" constant="20" id="0wY-ks-Nq0"/>
+                            <constraint firstItem="ufg-lL-10M" firstAttribute="top" secondItem="i5T-Wi-QCK" secondAttribute="bottom" constant="10" id="GJh-Sd-cnG"/>
+                            <constraint firstItem="ufg-lL-10M" firstAttribute="leading" secondItem="rGO-Cp-ffB" secondAttribute="leading" id="VM4-gx-M5O"/>
+                            <constraint firstItem="rGO-Cp-ffB" firstAttribute="trailing" secondItem="ufg-lL-10M" secondAttribute="trailing" id="iLg-xZ-CD7"/>
+                            <constraint firstItem="i5T-Wi-QCK" firstAttribute="top" secondItem="14Q-Vg-13a" secondAttribute="bottom" id="jL4-uL-eSO"/>
+                            <constraint firstItem="i5T-Wi-QCK" firstAttribute="leading" secondItem="14Q-Vg-13a" secondAttribute="leading" id="kaY-gI-tbF"/>
+                            <constraint firstItem="ufg-lL-10M" firstAttribute="centerY" secondItem="rGO-Cp-ffB" secondAttribute="centerY" id="zyG-Ju-euI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="rGO-Cp-ffB"/>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="ufg-lL-10M" id="Epd-72-BJ2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5F0-Vx-dFd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1529" y="139"/>
+            <point key="canvasLocation" x="1543" y="139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Logo" width="38" height="38"/>
+    </resources>
 </document>

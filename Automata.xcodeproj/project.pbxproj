@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		0138540722AC230C00D6CDCD /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138540622AC230C00D6CDCD /* IntroViewController.swift */; };
 		01BC1FDF22ABF70F001F632D /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BC1FDE22ABF70F001F632D /* PageViewController.swift */; };
-		01BC1FE122ABFF8D001F632D /* R30ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BC1FE022ABFF8D001F632D /* R30ViewController.swift */; };
-		01BC1FE322AC0CA2001F632D /* AutomataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BC1FE222AC0CA2001F632D /* AutomataCollectionViewCell.swift */; };
+		01BC1FE122ABFF8D001F632D /* R30V1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BC1FE022ABFF8D001F632D /* R30V1ViewController.swift */; };
+		01BC1FE322AC0CA2001F632D /* V1CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BC1FE222AC0CA2001F632D /* V1CollectionViewCell.swift */; };
 		01DA1CD322AAFE5B00158F6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA1CD222AAFE5B00158F6A /* AppDelegate.swift */; };
 		01DA1CD822AAFE5B00158F6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01DA1CD622AAFE5B00158F6A /* Main.storyboard */; };
 		01DA1CDB22AAFE5B00158F6A /* Automata.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 01DA1CD922AAFE5B00158F6A /* Automata.xcdatamodeld */; };
@@ -18,6 +18,9 @@
 		01DA1CE022AAFE5C00158F6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01DA1CDE22AAFE5C00158F6A /* LaunchScreen.storyboard */; };
 		01DA1CEB22AAFE5C00158F6A /* AutomataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA1CEA22AAFE5C00158F6A /* AutomataTests.swift */; };
 		01DA1CF622AAFE5C00158F6A /* AutomataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA1CF522AAFE5C00158F6A /* AutomataUITests.swift */; };
+		01EB440622AC36DE00502396 /* Podfile.txt in Resources */ = {isa = PBXBuildFile; fileRef = 01EB440522AC36DD00502396 /* Podfile.txt */; };
+		01EB440822AC399400502396 /* R30v2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EB440722AC399400502396 /* R30v2ViewController.swift */; };
+		01EB440A22AC3A9E00502396 /* V2CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EB440922AC3A9E00502396 /* V2CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +43,8 @@
 /* Begin PBXFileReference section */
 		0138540622AC230C00D6CDCD /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		01BC1FDE22ABF70F001F632D /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
-		01BC1FE022ABFF8D001F632D /* R30ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R30ViewController.swift; sourceTree = "<group>"; };
-		01BC1FE222AC0CA2001F632D /* AutomataCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomataCollectionViewCell.swift; sourceTree = "<group>"; };
+		01BC1FE022ABFF8D001F632D /* R30V1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R30V1ViewController.swift; sourceTree = "<group>"; };
+		01BC1FE222AC0CA2001F632D /* V1CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V1CollectionViewCell.swift; sourceTree = "<group>"; };
 		01DA1CCF22AAFE5B00158F6A /* Automata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Automata.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01DA1CD222AAFE5B00158F6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01DA1CD722AAFE5B00158F6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,6 +58,10 @@
 		01DA1CF122AAFE5C00158F6A /* AutomataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutomataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01DA1CF522AAFE5C00158F6A /* AutomataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomataUITests.swift; sourceTree = "<group>"; };
 		01DA1CF722AAFE5C00158F6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01EB440222AC324B00502396 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		01EB440522AC36DD00502396 /* Podfile.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.txt; sourceTree = "<group>"; };
+		01EB440722AC399400502396 /* R30v2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R30v2ViewController.swift; sourceTree = "<group>"; };
+		01EB440922AC3A9E00502396 /* V2CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +92,8 @@
 		0138540422AC228500D6CDCD /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				01BC1FE222AC0CA2001F632D /* AutomataCollectionViewCell.swift */,
+				01BC1FE222AC0CA2001F632D /* V1CollectionViewCell.swift */,
+				01EB440922AC3A9E00502396 /* V2CollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -95,7 +103,8 @@
 			children = (
 				0138540622AC230C00D6CDCD /* IntroViewController.swift */,
 				01BC1FDE22ABF70F001F632D /* PageViewController.swift */,
-				01BC1FE022ABFF8D001F632D /* R30ViewController.swift */,
+				01BC1FE022ABFF8D001F632D /* R30V1ViewController.swift */,
+				01EB440722AC399400502396 /* R30v2ViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -103,6 +112,7 @@
 		01DA1CC622AAFE5B00158F6A = {
 			isa = PBXGroup;
 			children = (
+				01EB440422AC36B200502396 /* 3rd Party */,
 				01DA1CD122AAFE5B00158F6A /* Automata */,
 				01DA1CE922AAFE5C00158F6A /* AutomataTests */,
 				01DA1CF422AAFE5C00158F6A /* AutomataUITests */,
@@ -131,6 +141,7 @@
 				01DA1CD622AAFE5B00158F6A /* Main.storyboard */,
 				0138540522AC228C00D6CDCD /* ViewControllers */,
 				0138540422AC228500D6CDCD /* Views */,
+				01EB440222AC324B00502396 /* README.md */,
 			);
 			path = Automata;
 			sourceTree = "<group>";
@@ -151,6 +162,14 @@
 				01DA1CF722AAFE5C00158F6A /* Info.plist */,
 			);
 			path = AutomataUITests;
+			sourceTree = "<group>";
+		};
+		01EB440422AC36B200502396 /* 3rd Party */ = {
+			isa = PBXGroup;
+			children = (
+				01EB440522AC36DD00502396 /* Podfile.txt */,
+			);
+			path = "3rd Party";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01EB440622AC36DE00502396 /* Podfile.txt in Resources */,
 				01DA1CE022AAFE5C00158F6A /* LaunchScreen.storyboard in Resources */,
 				01DA1CDD22AAFE5C00158F6A /* Assets.xcassets in Resources */,
 				01DA1CD822AAFE5B00158F6A /* Main.storyboard in Resources */,
@@ -284,12 +304,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01BC1FE122ABFF8D001F632D /* R30ViewController.swift in Sources */,
+				01BC1FE122ABFF8D001F632D /* R30V1ViewController.swift in Sources */,
 				01DA1CDB22AAFE5B00158F6A /* Automata.xcdatamodeld in Sources */,
 				01DA1CD322AAFE5B00158F6A /* AppDelegate.swift in Sources */,
 				0138540722AC230C00D6CDCD /* IntroViewController.swift in Sources */,
+				01EB440A22AC3A9E00502396 /* V2CollectionViewCell.swift in Sources */,
 				01BC1FDF22ABF70F001F632D /* PageViewController.swift in Sources */,
-				01BC1FE322AC0CA2001F632D /* AutomataCollectionViewCell.swift in Sources */,
+				01BC1FE322AC0CA2001F632D /* V1CollectionViewCell.swift in Sources */,
+				01EB440822AC399400502396 /* R30v2ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
