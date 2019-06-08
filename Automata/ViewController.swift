@@ -13,8 +13,13 @@ class ViewController: UIViewController {
 	
 	@IBOutlet weak var collectionView: UICollectionView!
 	
-	private let itemsPerRow: Int = 100
+	private var itemsPerRow: Int = 40
+	private var numberOfRows: Int = 0
 	private let sectionInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
+	
+	override func viewDidLoad() {
+		numberOfRows = itemsPerRow * (itemsPerRow / 2)
+	}
 }
 
 extension ViewController: UICollectionViewDataSource {
@@ -26,7 +31,7 @@ extension ViewController: UICollectionViewDataSource {
 	
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 		//Ai: Perhaps allow the user to adjust the cell count
-		return itemsPerRow * (itemsPerRow / 2)
+		return numberOfRows
 	}
 	
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

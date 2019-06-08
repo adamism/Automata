@@ -13,15 +13,18 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Automata" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vVa-AF-VPN">
-                                <rect key="frame" x="0.0" y="120.5" width="414" height="776.5"/>
+                                <rect key="frame" x="0.0" y="347" width="414" height="212"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="OMd-N5-iBo"/>
+                                    <constraint firstAttribute="height" constant="212" id="nik-I4-v1b"/>
+                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Dme-xi-cca">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -44,13 +47,13 @@
                                 </connections>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cellular Automata" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Oz-Hu-DpN">
-                                <rect key="frame" x="20" y="53" width="244" height="38.5"/>
+                                <rect key="frame" x="20" y="277.5" width="244" height="38.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adam Ismail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTf-WW-oex">
-                                <rect key="frame" x="20" y="91.5" width="93" height="21"/>
+                                <rect key="frame" x="20" y="316" width="93" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -63,9 +66,8 @@
                             <constraint firstItem="uTf-WW-oex" firstAttribute="top" secondItem="0Oz-Hu-DpN" secondAttribute="bottom" id="8I1-HK-pwg"/>
                             <constraint firstItem="0Oz-Hu-DpN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Am4-kQ-azu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vVa-AF-VPN" secondAttribute="trailing" id="Ao2-Qz-9cp"/>
-                            <constraint firstItem="vVa-AF-VPN" firstAttribute="top" secondItem="uTf-WW-oex" secondAttribute="bottom" constant="8" id="QET-dq-Pdk"/>
-                            <constraint firstItem="0Oz-Hu-DpN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="9" id="i9e-ZR-gFM"/>
-                            <constraint firstItem="vVa-AF-VPN" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="35" id="mIu-z9-BzH"/>
+                            <constraint firstItem="vVa-AF-VPN" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="mcs-ac-ONM"/>
+                            <constraint firstItem="vVa-AF-VPN" firstAttribute="top" secondItem="uTf-WW-oex" secondAttribute="bottom" constant="10" id="x11-6m-C2Y"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -73,6 +75,7 @@
                         <outlet property="collectionView" destination="vVa-AF-VPN" id="suv-4P-bKg"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="140.57971014492756" y="138.61607142857142"/>
         </scene>
