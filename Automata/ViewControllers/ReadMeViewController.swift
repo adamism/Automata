@@ -15,15 +15,14 @@ class ReadMeViewController: UIViewController {
 	
 	private let readmeFileName = "README"
 	
-	override func viewWillAppear(_ animated: Bool) {
-		super.viewWillAppear(animated)
+	override func viewDidLoad() {
+		super.viewDidLoad()
 		
 		showReadMe()
 	}
 	
 	private func showReadMe() {
 		let downView = try? DownView(frame: markDownView.bounds, markdownString: getReadMeContents()) { }
-
 		markDownView.addSubview(downView!)
 		markDownView.isHidden = false
 		markDownView.alpha = 0.0
