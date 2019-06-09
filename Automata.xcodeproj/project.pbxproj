@@ -21,7 +21,6 @@
 		01DA1CE022AAFE5C00158F6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01DA1CDE22AAFE5C00158F6A /* LaunchScreen.storyboard */; };
 		01DA1CEB22AAFE5C00158F6A /* AutomataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA1CEA22AAFE5C00158F6A /* AutomataTests.swift */; };
 		01DA1CF622AAFE5C00158F6A /* AutomataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA1CF522AAFE5C00158F6A /* AutomataUITests.swift */; };
-		01EB440A22AC3A9E00502396 /* V2CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EB440922AC3A9E00502396 /* V2CollectionViewCell.swift */; };
 		30D6874C4A7DBD82664A6682 /* Pods_Automata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37AB74C434CA1EC56DDEEF5F /* Pods_Automata.framework */; };
 		997B828C4A20C3CCE80CE258 /* Pods_AutomataTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B537C970EA38C62A8DF870AF /* Pods_AutomataTests.framework */; };
 		E1C72DD1E61BDB8615F2E8A6 /* Pods_AutomataUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 203A9D5DA6073166FCF0A47C /* Pods_AutomataUITests.framework */; };
@@ -65,7 +64,6 @@
 		01DA1CF522AAFE5C00158F6A /* AutomataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomataUITests.swift; sourceTree = "<group>"; };
 		01DA1CF722AAFE5C00158F6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01EB440222AC324B00502396 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		01EB440922AC3A9E00502396 /* V2CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2CollectionViewCell.swift; sourceTree = "<group>"; };
 		203A9D5DA6073166FCF0A47C /* Pods_AutomataUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutomataUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37AB74C434CA1EC56DDEEF5F /* Pods_Automata.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Automata.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		582DD23750338BA876AC34AA /* Pods-Automata.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Automata.release.xcconfig"; path = "Target Support Files/Pods-Automata/Pods-Automata.release.xcconfig"; sourceTree = "<group>"; };
@@ -109,7 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				01BC1FE222AC0CA2001F632D /* V1CollectionViewCell.swift */,
-				01EB440922AC3A9E00502396 /* V2CollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -432,7 +429,6 @@
 				01DA1CDB22AAFE5B00158F6A /* Automata.xcdatamodeld in Sources */,
 				01DA1CD322AAFE5B00158F6A /* AppDelegate.swift in Sources */,
 				0138540722AC230C00D6CDCD /* ReadMeViewController.swift in Sources */,
-				01EB440A22AC3A9E00502396 /* V2CollectionViewCell.swift in Sources */,
 				01BC1FDF22ABF70F001F632D /* PageViewController.swift in Sources */,
 				0127C95B22AD469B00BE73A9 /* MainViewController.swift in Sources */,
 				01BC1FE322AC0CA2001F632D /* V1CollectionViewCell.swift in Sources */,
