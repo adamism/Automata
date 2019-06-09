@@ -12,8 +12,8 @@ import Down
 class IntroViewController: UIViewController {
 	
 	@IBOutlet weak var logoImageView: UIImageView!
-	@IBOutlet weak var titleLabel: UILabel!
 	@IBOutlet weak var markDownView: UIView!
+	
 	private let readmeFileName = "README"
 	
 	override func viewWillAppear(_ animated: Bool) {
@@ -30,7 +30,14 @@ class IntroViewController: UIViewController {
 		UIView.animate(withDuration: 0.2, delay: 0.5, options: UIView.AnimationOptions.curveEaseInOut, animations: {
 			self.logoImageView.transform = CGAffineTransform(translationX: 0, y: -10)
 			self.logoImageView.alpha = 0.0
-		}, completion: nil)
+		}, completion: { _ in
+			self.logoImageView.bottomAnchor.constraint(equalTo: self.markDownView.topAnchor).isActive = true
+			
+			UIView.animate(withDuration: 0.4) {
+				self.logoImageView.transform = CGAffineTransform(translationX: 0, y: -30)
+				self.logoImageView.alpha = 1.0
+			}
+		})
 	}
 	
 	private func showReadMe() {
@@ -39,7 +46,7 @@ class IntroViewController: UIViewController {
 		markDownView.addSubview(downView!)
 		markDownView.isHidden = false
 		markDownView.alpha = 0.0
-
+		
 		UIView.animate(withDuration: 0.2, delay: 0.5, options: UIView.AnimationOptions.curveEaseInOut, animations: {
 			self.markDownView.transform = CGAffineTransform(translationX: 0, y: -20)
 			self.markDownView.alpha = 1.0
