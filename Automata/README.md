@@ -1,5 +1,6 @@
 ## Cellular Automata
-###### Rule 30: topLeftCell != (topCell || topRightCell)
+###### Rule 30:
+topLeftCell != (topCell || topRightCell)
 
 I started off hoping there was some kind of crazy efficient approach to drawing these simple cells. After some initial research, it seemed to make the most sense to implement a CollectionView, as they are so commonly utilized and would make a great example.
 

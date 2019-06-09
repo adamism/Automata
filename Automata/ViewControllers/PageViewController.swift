@@ -12,9 +12,9 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
 
 	var pageControl = UIPageControl()
 	lazy var orderedViewControllers: [UIViewController] = {
-		return [newVc(viewController: "readMe"),
-				newVc(viewController: "rule30CollectionView"),
-				newVc(viewController: "rule30Alt")]
+		return [newVc(viewController: "welcome"),
+				newVc(viewController: "rule30v1"),
+				newVc(viewController: "readMe")]
 	}()
 
     override func viewDidLoad() {
@@ -25,7 +25,6 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
 		
 		configurePageControl()
 
-		// This sets up the first view that will show up on our page control
 		if let firstViewController = orderedViewControllers.first {
 			setViewControllers([firstViewController], direction: .forward, animated: true, completion: nil)
 		}
@@ -35,9 +34,10 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
 	private func newVc(viewController: String) -> UIViewController {
 		return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: viewController)
 	}
+	
 	private func configurePageControl() {
 		// The total number of pages that are available is based on how many available colors we have.
-		pageControl = UIPageControl(frame: CGRect(x: 0,y: UIScreen.main.bounds.maxY - 85, width: UIScreen.main.bounds.width, height: 50))
+		pageControl = UIPageControl(frame: CGRect(x: 0,y: view.bounds.height - 250, width: view.bounds.width, height: 50))
 		self.pageControl.numberOfPages = orderedViewControllers.count
 		self.pageControl.currentPage = 0
 		self.pageControl.tintColor = UIColor.black

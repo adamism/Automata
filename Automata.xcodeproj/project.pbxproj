@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0127C95922ACB8C700BE73A9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 01EB440222AC324B00502396 /* README.md */; };
-		0138540722AC230C00D6CDCD /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138540622AC230C00D6CDCD /* IntroViewController.swift */; };
+		0127C95B22AD469B00BE73A9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127C95A22AD469A00BE73A9 /* MainViewController.swift */; };
+		0127C95D22AD4E1200BE73A9 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127C95C22AD4E1200BE73A9 /* WelcomeViewController.swift */; };
+		0138540722AC230C00D6CDCD /* ReadMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138540622AC230C00D6CDCD /* ReadMeViewController.swift */; };
 		01BC1FDF22ABF70F001F632D /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BC1FDE22ABF70F001F632D /* PageViewController.swift */; };
 		01BC1FE122ABFF8D001F632D /* R30V1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BC1FE022ABFF8D001F632D /* R30V1ViewController.swift */; };
 		01BC1FE322AC0CA2001F632D /* V1CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BC1FE222AC0CA2001F632D /* V1CollectionViewCell.swift */; };
@@ -19,7 +21,6 @@
 		01DA1CE022AAFE5C00158F6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01DA1CDE22AAFE5C00158F6A /* LaunchScreen.storyboard */; };
 		01DA1CEB22AAFE5C00158F6A /* AutomataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA1CEA22AAFE5C00158F6A /* AutomataTests.swift */; };
 		01DA1CF622AAFE5C00158F6A /* AutomataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA1CF522AAFE5C00158F6A /* AutomataUITests.swift */; };
-		01EB440822AC399400502396 /* R30v2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EB440722AC399400502396 /* R30v2ViewController.swift */; };
 		01EB440A22AC3A9E00502396 /* V2CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EB440922AC3A9E00502396 /* V2CollectionViewCell.swift */; };
 		30D6874C4A7DBD82664A6682 /* Pods_Automata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37AB74C434CA1EC56DDEEF5F /* Pods_Automata.framework */; };
 		997B828C4A20C3CCE80CE258 /* Pods_AutomataTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B537C970EA38C62A8DF870AF /* Pods_AutomataTests.framework */; };
@@ -44,7 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0138540622AC230C00D6CDCD /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		0127C95A22AD469A00BE73A9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		0127C95C22AD4E1200BE73A9 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		0138540622AC230C00D6CDCD /* ReadMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMeViewController.swift; sourceTree = "<group>"; };
 		01BC1FDE22ABF70F001F632D /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		01BC1FE022ABFF8D001F632D /* R30V1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R30V1ViewController.swift; sourceTree = "<group>"; };
 		01BC1FE222AC0CA2001F632D /* V1CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V1CollectionViewCell.swift; sourceTree = "<group>"; };
@@ -62,7 +65,6 @@
 		01DA1CF522AAFE5C00158F6A /* AutomataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomataUITests.swift; sourceTree = "<group>"; };
 		01DA1CF722AAFE5C00158F6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01EB440222AC324B00502396 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		01EB440722AC399400502396 /* R30v2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R30v2ViewController.swift; sourceTree = "<group>"; };
 		01EB440922AC3A9E00502396 /* V2CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2CollectionViewCell.swift; sourceTree = "<group>"; };
 		203A9D5DA6073166FCF0A47C /* Pods_AutomataUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutomataUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37AB74C434CA1EC56DDEEF5F /* Pods_Automata.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Automata.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,10 +117,11 @@
 		0138540522AC228C00D6CDCD /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				0138540622AC230C00D6CDCD /* IntroViewController.swift */,
+				0127C95A22AD469A00BE73A9 /* MainViewController.swift */,
 				01BC1FDE22ABF70F001F632D /* PageViewController.swift */,
 				01BC1FE022ABFF8D001F632D /* R30V1ViewController.swift */,
-				01EB440722AC399400502396 /* R30v2ViewController.swift */,
+				0138540622AC230C00D6CDCD /* ReadMeViewController.swift */,
+				0127C95C22AD4E1200BE73A9 /* WelcomeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -154,9 +157,9 @@
 				01DA1CE122AAFE5C00158F6A /* Info.plist */,
 				01DA1CDE22AAFE5C00158F6A /* LaunchScreen.storyboard */,
 				01DA1CD622AAFE5B00158F6A /* Main.storyboard */,
+				01EB440222AC324B00502396 /* README.md */,
 				0138540522AC228C00D6CDCD /* ViewControllers */,
 				0138540422AC228500D6CDCD /* Views */,
-				01EB440222AC324B00502396 /* README.md */,
 			);
 			path = Automata;
 			sourceTree = "<group>";
@@ -425,13 +428,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				01BC1FE122ABFF8D001F632D /* R30V1ViewController.swift in Sources */,
+				0127C95D22AD4E1200BE73A9 /* WelcomeViewController.swift in Sources */,
 				01DA1CDB22AAFE5B00158F6A /* Automata.xcdatamodeld in Sources */,
 				01DA1CD322AAFE5B00158F6A /* AppDelegate.swift in Sources */,
-				0138540722AC230C00D6CDCD /* IntroViewController.swift in Sources */,
+				0138540722AC230C00D6CDCD /* ReadMeViewController.swift in Sources */,
 				01EB440A22AC3A9E00502396 /* V2CollectionViewCell.swift in Sources */,
 				01BC1FDF22ABF70F001F632D /* PageViewController.swift in Sources */,
+				0127C95B22AD469B00BE73A9 /* MainViewController.swift in Sources */,
 				01BC1FE322AC0CA2001F632D /* V1CollectionViewCell.swift in Sources */,
-				01EB440822AC399400502396 /* R30v2ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

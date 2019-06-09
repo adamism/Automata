@@ -11,7 +11,6 @@ import Down
 
 class ReadMeViewController: UIViewController {
 	
-	@IBOutlet weak var logoImageView: UIImageView!
 	@IBOutlet weak var markDownView: UIView!
 	
 	private let readmeFileName = "README"
@@ -19,10 +18,7 @@ class ReadMeViewController: UIViewController {
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
 		
-		if isFirstViewCycle() {
-			showReadMe()
-			startAnimatingBackground()
-		}
+		showReadMe()
 	}
 	
 	private func showReadMe() {
@@ -51,13 +47,5 @@ class ReadMeViewController: UIViewController {
 		}
 		
 		return contents
-	}
-	
-	private func isFirstViewCycle() -> Bool {
-		return markDownView.isHidden
-	}
-	
-	private func startAnimatingBackground() {
-		
 	}
 }
