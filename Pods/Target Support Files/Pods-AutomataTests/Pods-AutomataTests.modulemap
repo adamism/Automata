@@ -1,0 +1,6 @@
+framework module Pods_AutomataTests {
+  umbrella header "Pods-AutomataTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

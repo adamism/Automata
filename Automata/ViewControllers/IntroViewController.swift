@@ -7,65 +7,62 @@
 //
 
 import UIKit
+import Down
 
 class IntroViewController: UIViewController {
 	
 	@IBOutlet weak var logoImageView: UIImageView!
 	@IBOutlet weak var titleLabel: UILabel!
+	@IBOutlet weak var markDownView: UIView!
+	private let readmeFileName = "README"
 	
-	private let readmeFileName = "readme.txt"
-	
-	override func viewDidLoad() {
-		super.viewDidLoad()
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
 		
-		if let filepath = Bundle.main.path(forResource: readmeFileName, ofType: "txt") {
+		if isFirstViewCycle() {
+			animateLogo()
+			showReadMe()
+			startAnimatingBackground()
+		}
+	}
+	
+	private func animateLogo() {
+		UIView.animate(withDuration: 0.2, delay: 0.5, options: UIView.AnimationOptions.curveEaseInOut, animations: {
+			self.logoImageView.transform = CGAffineTransform(translationX: 0, y: -10)
+			self.logoImageView.alpha = 0.0
+		}, completion: nil)
+	}
+	
+	private func showReadMe() {
+		let downView = try? DownView(frame: markDownView.bounds, markdownString: getReadMeContents()) { }
+
+		markDownView.addSubview(downView!)
+		markDownView.isHidden = false
+		markDownView.alpha = 0.0
+
+		UIView.animate(withDuration: 0.2, delay: 0.5, options: UIView.AnimationOptions.curveEaseInOut, animations: {
+			self.markDownView.transform = CGAffineTransform(translationX: 0, y: -20)
+			self.markDownView.alpha = 1.0
+		}, completion: nil)
+	}
+
+	private func getReadMeContents() -> String {
+		var contents: String = "Readme"
+		if let filepath = Bundle.main.path(forResource: readmeFileName, ofType: "md") {
 			do {
-				let contents = try String(contentsOfFile: filepath)
-				print(contents)
+				contents = try String(contentsOfFile: filepath)
 			} catch {
 				print("Failed to load contents of \(filepath)")
 			}
 		} else {
 			print("Failed to load contents of \(readmeFileName)")
 		}
-	}
-	
-	override func viewWillAppear(_ animated: Bool) {
-		super.viewWillAppear(animated)
 		
-		animateLogo()
-		animateContent()
-		startAnimatingBackground()
+		return contents
 	}
-			private func animateLogo() {
-				if isFirstViewCycle() {
-					UIView.animate(withDuration: 0.2, delay: 0.5, options: UIView.AnimationOptions.curveEaseInOut, animations: {
-						self.logoImageView.transform = CGAffineTransform(translationX: 0, y: -10)
-						self.logoImageView.alpha = 0.0
-					}, completion: nil)
-				}
-			}
-			
-			private func animateContent() {
-				if isFirstViewCycle() {
-					titleLabel.alpha = 0.0
-					titleLabel.isHidden = false
-				
-					UIView.animateKeyframes(withDuration: 0.3, delay: 0.5, options: [], animations: {
-						UIView.addKeyframe(withRelativeStartTime: 0.0, relativeDuration: 0.5, animations: {
-//							self.titleLabel.transform = CGAffineTransform(translationX: 0, y: -30)
-							self.titleLabel.alpha = 1.0
-						})
-						UIView.addKeyframe(withRelativeStartTime: 0.5, relativeDuration: 0.5, animations: {
-//							self.readMeView.transform = CGAffineTransform(translationX: 0, y: -25)
-//							self.readMeView.alpha = 0.0
-						})
-					}, completion: nil)
-				}
-			}
 	
 	private func isFirstViewCycle() -> Bool {
-		return titleLabel.isHidden
+		return markDownView.isHidden
 	}
 	
 	private func startAnimatingBackground() {
