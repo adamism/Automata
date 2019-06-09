@@ -15,6 +15,7 @@ class MainViewController: UIViewController {
 	
 	override func viewDidLoad() {
         super.viewDidLoad()
+		
 		animateLogo()
     }
 
@@ -25,7 +26,7 @@ class MainViewController: UIViewController {
 		}, completion: { _ in
 			self.logoImageView.bottomAnchor.constraint(equalTo: self.containerView.topAnchor).isActive = true
 			
-			UIView.animate(withDuration: 0.1) {
+			UIView.animate(withDuration: 0.2) {
 				self.logoImageView.transform = CGAffineTransform(translationX: 0, y: -5)
 				self.logoImageView.alpha = 1.0
 			}
