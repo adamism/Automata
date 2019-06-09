@@ -31,14 +31,24 @@
                                     <constraint firstAttribute="width" constant="50" id="Aff-dG-9RE"/>
                                 </constraints>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M5h-VM-Ntm" userLabel="Top Line">
+                                <rect key="frame" x="0.0" y="143" width="414" height="1"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="MOi-Ss-bp9"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="pOW-G8-RaZ" firstAttribute="centerY" secondItem="mvu-oY-OHa" secondAttribute="centerY" id="2GN-sH-LIU"/>
+                            <constraint firstItem="pOW-G8-RaZ" firstAttribute="centerY" secondItem="mvu-oY-OHa" secondAttribute="centerY" priority="500" id="2GN-sH-LIU"/>
                             <constraint firstItem="mvu-oY-OHa" firstAttribute="trailing" secondItem="ARp-ft-MaF" secondAttribute="trailing" id="655-Mg-QW6"/>
                             <constraint firstItem="pOW-G8-RaZ" firstAttribute="centerX" secondItem="mvu-oY-OHa" secondAttribute="centerX" id="A3X-HB-bYh"/>
+                            <constraint firstItem="mvu-oY-OHa" firstAttribute="trailing" secondItem="M5h-VM-Ntm" secondAttribute="trailing" id="K0L-l5-nwM"/>
+                            <constraint firstItem="M5h-VM-Ntm" firstAttribute="leading" secondItem="mvu-oY-OHa" secondAttribute="leading" id="L6o-5M-mBX"/>
                             <constraint firstItem="mvu-oY-OHa" firstAttribute="bottom" secondItem="ARp-ft-MaF" secondAttribute="bottom" id="aHA-Kx-FyM"/>
                             <constraint firstItem="ARp-ft-MaF" firstAttribute="top" secondItem="mvu-oY-OHa" secondAttribute="top" constant="100" id="i2M-pb-YsD"/>
+                            <constraint firstItem="ARp-ft-MaF" firstAttribute="top" secondItem="M5h-VM-Ntm" secondAttribute="bottom" id="rud-AK-ZRb"/>
                             <constraint firstItem="ARp-ft-MaF" firstAttribute="leading" secondItem="mvu-oY-OHa" secondAttribute="leading" id="w5S-f3-XrS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mvu-oY-OHa"/>
@@ -90,8 +100,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="I had a blast going down rabbit holes and trying new things.👍🏼" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mmp-NB-cGc">
-                                <rect key="frame" x="57" y="686" width="300" height="50"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="I had a blast going down rabbit holes and trying new things👍🏼" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mmp-NB-cGc">
+                                <rect key="frame" x="57" y="636" width="300" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="oQ5-ql-h3z"/>
@@ -107,7 +117,7 @@
                             <constraint firstItem="mmp-NB-cGc" firstAttribute="leading" secondItem="UYM-IP-PUS" secondAttribute="leading" id="45K-iC-rVg"/>
                             <constraint firstItem="zOH-wR-onj" firstAttribute="centerY" secondItem="wWl-tu-JYE" secondAttribute="centerY" constant="-100" id="CtQ-gF-Iuh"/>
                             <constraint firstItem="zOH-wR-onj" firstAttribute="centerX" secondItem="wWl-tu-JYE" secondAttribute="centerX" id="Kfp-UZ-pbz"/>
-                            <constraint firstItem="mmp-NB-cGc" firstAttribute="top" secondItem="UYM-IP-PUS" secondAttribute="bottom" constant="200" id="eN6-pw-wfN"/>
+                            <constraint firstItem="mmp-NB-cGc" firstAttribute="top" secondItem="UYM-IP-PUS" secondAttribute="bottom" constant="150" id="eN6-pw-wfN"/>
                             <constraint firstItem="UYM-IP-PUS" firstAttribute="top" secondItem="zOH-wR-onj" secondAttribute="bottom" constant="8" id="xeu-ie-4qb"/>
                             <constraint firstItem="UYM-IP-PUS" firstAttribute="leading" secondItem="zOH-wR-onj" secondAttribute="leading" constant="-5" id="xvY-SO-ZeP"/>
                         </constraints>
@@ -132,16 +142,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hht-ff-7Pz">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="384" height="768"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="G83-t5-JJ0" firstAttribute="bottom" secondItem="hht-ff-7Pz" secondAttribute="bottom" id="B4i-6S-Pfa"/>
+                            <constraint firstItem="G83-t5-JJ0" firstAttribute="bottom" secondItem="hht-ff-7Pz" secondAttribute="bottom" constant="50" id="B4i-6S-Pfa"/>
                             <constraint firstItem="hht-ff-7Pz" firstAttribute="top" secondItem="G83-t5-JJ0" secondAttribute="top" id="DR0-HF-7bb"/>
                             <constraint firstItem="hht-ff-7Pz" firstAttribute="leading" secondItem="G83-t5-JJ0" secondAttribute="leading" id="YaW-xS-0mR"/>
-                            <constraint firstItem="G83-t5-JJ0" firstAttribute="trailing" secondItem="hht-ff-7Pz" secondAttribute="trailing" id="uWz-n0-3hH"/>
+                            <constraint firstItem="G83-t5-JJ0" firstAttribute="trailing" secondItem="hht-ff-7Pz" secondAttribute="trailing" constant="30" id="uWz-n0-3hH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="G83-t5-JJ0"/>
                     </view>
@@ -162,10 +172,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vVa-AF-VPN">
-                                <rect key="frame" x="0.0" y="347" width="414" height="212"/>
+                                <rect key="frame" x="0.0" y="241" width="414" height="212"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="414" id="OMd-N5-iBo"/>
+                                    <constraint firstAttribute="width" priority="500" constant="414" id="OMd-N5-iBo"/>
                                     <constraint firstAttribute="height" constant="212" id="nik-I4-v1b"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Dme-xi-cca">
@@ -191,19 +201,35 @@
                                 </connections>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rule 30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Oz-Hu-DpN">
-                                <rect key="frame" x="20" y="298" width="106.5" height="39"/>
+                                <rect key="frame" x="32" y="453" width="350" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="xub-65-9b3"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xsq-Mk-qYh">
+                                <rect key="frame" x="53" y="492" width="300" height="175"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="IuO-WN-O2D"/>
+                                    <constraint firstAttribute="height" constant="175" id="xex-cv-yzE"/>
+                                </constraints>
+                                <mutableString key="text">I know you noticed that delay after you swiped, I notice it too..   I originally thought a CollectionView would be a great approach to this exercise, and it was simple to get up and running, but as we can see, the performance is sub par.  Formula: topLeft != (top || topRight)</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="vVa-AF-VPN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="74t-yR-lQd"/>
-                            <constraint firstItem="0Oz-Hu-DpN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Am4-kQ-azu"/>
+                            <constraint firstItem="Xsq-Mk-qYh" firstAttribute="top" secondItem="0Oz-Hu-DpN" secondAttribute="bottom" id="A9b-jw-KKW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vVa-AF-VPN" secondAttribute="trailing" id="Ao2-Qz-9cp"/>
-                            <constraint firstItem="vVa-AF-VPN" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="mcs-ac-ONM"/>
-                            <constraint firstItem="vVa-AF-VPN" firstAttribute="top" secondItem="0Oz-Hu-DpN" secondAttribute="bottom" constant="10" id="uE1-kH-fUR"/>
+                            <constraint firstItem="0Oz-Hu-DpN" firstAttribute="centerX" secondItem="vVa-AF-VPN" secondAttribute="centerX" id="HjG-LX-WXK"/>
+                            <constraint firstItem="0Oz-Hu-DpN" firstAttribute="top" secondItem="vVa-AF-VPN" secondAttribute="bottom" id="IXF-Af-pdx"/>
+                            <constraint firstItem="Xsq-Mk-qYh" firstAttribute="centerX" secondItem="0Oz-Hu-DpN" secondAttribute="centerX" constant="-4" id="h3K-84-5Ts"/>
+                            <constraint firstItem="vVa-AF-VPN" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="mcs-ac-ONM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -213,7 +239,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="783" y="139"/>
+            <point key="canvasLocation" x="782.60869565217399" y="138.61607142857142"/>
         </scene>
     </scenes>
     <resources>
