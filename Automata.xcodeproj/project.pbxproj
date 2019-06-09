@@ -18,7 +18,6 @@
 		01DA1CE022AAFE5C00158F6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01DA1CDE22AAFE5C00158F6A /* LaunchScreen.storyboard */; };
 		01DA1CEB22AAFE5C00158F6A /* AutomataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA1CEA22AAFE5C00158F6A /* AutomataTests.swift */; };
 		01DA1CF622AAFE5C00158F6A /* AutomataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA1CF522AAFE5C00158F6A /* AutomataUITests.swift */; };
-		01EB440622AC36DE00502396 /* Podfile.txt in Resources */ = {isa = PBXBuildFile; fileRef = 01EB440522AC36DD00502396 /* Podfile.txt */; };
 		01EB440822AC399400502396 /* R30v2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EB440722AC399400502396 /* R30v2ViewController.swift */; };
 		01EB440A22AC3A9E00502396 /* V2CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EB440922AC3A9E00502396 /* V2CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -59,7 +58,6 @@
 		01DA1CF522AAFE5C00158F6A /* AutomataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomataUITests.swift; sourceTree = "<group>"; };
 		01DA1CF722AAFE5C00158F6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01EB440222AC324B00502396 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		01EB440522AC36DD00502396 /* Podfile.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.txt; sourceTree = "<group>"; };
 		01EB440722AC399400502396 /* R30v2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R30v2ViewController.swift; sourceTree = "<group>"; };
 		01EB440922AC3A9E00502396 /* V2CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,7 +110,6 @@
 		01DA1CC622AAFE5B00158F6A = {
 			isa = PBXGroup;
 			children = (
-				01EB440422AC36B200502396 /* 3rd Party */,
 				01DA1CD122AAFE5B00158F6A /* Automata */,
 				01DA1CE922AAFE5C00158F6A /* AutomataTests */,
 				01DA1CF422AAFE5C00158F6A /* AutomataUITests */,
@@ -162,14 +159,6 @@
 				01DA1CF722AAFE5C00158F6A /* Info.plist */,
 			);
 			path = AutomataUITests;
-			sourceTree = "<group>";
-		};
-		01EB440422AC36B200502396 /* 3rd Party */ = {
-			isa = PBXGroup;
-			children = (
-				01EB440522AC36DD00502396 /* Podfile.txt */,
-			);
-			path = "3rd Party";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,7 +265,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01EB440622AC36DE00502396 /* Podfile.txt in Resources */,
 				01DA1CE022AAFE5C00158F6A /* LaunchScreen.storyboard in Resources */,
 				01DA1CDD22AAFE5C00158F6A /* Assets.xcassets in Resources */,
 				01DA1CD822AAFE5B00158F6A /* Main.storyboard in Resources */,

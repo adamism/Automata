@@ -14,7 +14,7 @@ class R30V1ViewController: UIViewController {
 	@IBOutlet weak var collectionView: UICollectionView!
 	
 	private let cellID = "caCell"
-	private var itemsPerRow: Int = 40
+	private var itemsPerRow: Int = 80
 	private var numberOfRows: Int = 0
 	
 	override func viewDidLoad() {
