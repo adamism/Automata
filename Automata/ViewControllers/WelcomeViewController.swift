@@ -16,17 +16,17 @@ class WelcomeViewController: UIViewController {
 	
 	override func viewDidLoad() {
         super.viewDidLoad()
+		
+		//Setting this here because it's set to white on the storyboard for easy editing.
 		view.backgroundColor = .clear
+
 		animateScene()
 	}
 	
 	private func animateScene() {
 		//Setup
-		self.welcomeLabel.transform = CGAffineTransform(translationX: 0, y: 2)
 		self.welcomeLabel.alpha = 0.0
-		self.textView1.transform = CGAffineTransform(translationX: 0, y: 2)
 		self.textView1.alpha = 0.0
-		self.textView2.transform = CGAffineTransform(translationX: 0, y: 2)
 		self.textView2.alpha = 0.0
 		
 		//Animate
