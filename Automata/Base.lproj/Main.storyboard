@@ -142,16 +142,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="718"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hht-ff-7Pz">
-                                <rect key="frame" x="0.0" y="44" width="384" height="590"/>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hht-ff-7Pz">
+                                <rect key="frame" x="0.0" y="44" width="384" height="548"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f4I-Jn-WD2" userLabel="Bottom Line">
+                                <rect key="frame" x="20" y="592" width="374" height="1"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="9x3-d0-z0Z"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="G83-t5-JJ0" firstAttribute="bottom" secondItem="hht-ff-7Pz" secondAttribute="bottom" constant="50" id="B4i-6S-Pfa"/>
+                            <constraint firstItem="G83-t5-JJ0" firstAttribute="bottom" secondItem="hht-ff-7Pz" secondAttribute="bottom" constant="92" id="B4i-6S-Pfa"/>
                             <constraint firstItem="hht-ff-7Pz" firstAttribute="top" secondItem="G83-t5-JJ0" secondAttribute="top" id="DR0-HF-7bb"/>
+                            <constraint firstItem="f4I-Jn-WD2" firstAttribute="leading" secondItem="G83-t5-JJ0" secondAttribute="leading" constant="20" id="L1N-ZS-fQC"/>
                             <constraint firstItem="hht-ff-7Pz" firstAttribute="leading" secondItem="G83-t5-JJ0" secondAttribute="leading" id="YaW-xS-0mR"/>
+                            <constraint firstItem="G83-t5-JJ0" firstAttribute="trailing" secondItem="f4I-Jn-WD2" secondAttribute="trailing" constant="20" id="hQq-pn-X89"/>
+                            <constraint firstItem="f4I-Jn-WD2" firstAttribute="top" secondItem="hht-ff-7Pz" secondAttribute="bottom" id="rJM-ol-zts"/>
                             <constraint firstItem="G83-t5-JJ0" firstAttribute="trailing" secondItem="hht-ff-7Pz" secondAttribute="trailing" constant="30" id="uWz-n0-3hH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="G83-t5-JJ0"/>
@@ -163,12 +173,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J3a-fg-3qF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1507" y="175"/>
+            <point key="canvasLocation" x="3009" y="173"/>
         </scene>
-        <!--R30V1ViewController-->
+        <!--R30S View Controller Scene-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="rule30v1" id="BYZ-38-t0r" userLabel="R30V1ViewController" customClass="R30V1ViewController" customModule="Automata" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="rule30v1" id="BYZ-38-t0r" userLabel="R30S View Controller Scene" customClass="R30ViewController" customModule="Automata" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="718"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -202,23 +212,22 @@
                                     <outlet property="prefetchDataSource" destination="BYZ-38-t0r" id="9uZ-zh-GD3"/>
                                 </connections>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rule 30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Oz-Hu-DpN">
-                                <rect key="frame" x="32" y="364" width="350" height="39"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rule 30: Small" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Oz-Hu-DpN" userLabel="Rule 30">
+                                <rect key="frame" x="44.5" y="364" width="325" height="39"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="350" id="xub-65-9b3"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="325" id="xub-65-9b3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xsq-Mk-qYh">
-                                <rect key="frame" x="28" y="403" width="350" height="175"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Intervals: 20  Nice. The CollectionView produces the grid pretty quickly - things are snappy." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xsq-Mk-qYh">
+                                <rect key="frame" x="40.5" y="403" width="325" height="175"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="350" id="IuO-WN-O2D"/>
+                                    <constraint firstAttribute="width" constant="325" id="IuO-WN-O2D"/>
                                     <constraint firstAttribute="height" constant="175" id="xex-cv-yzE"/>
                                 </constraints>
-                                <mutableString key="text">Formula: topLeft != (top || topRight)  I know you noticed that delay after you swiped, I noticed it too..   I originally thought a CollectionView would be a great approach to this exercise, and although it was quick to get up and running, but as we can see, the performance is sub par.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -235,13 +244,183 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <size key="freeformSize" width="414" height="718"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cellsPerRow">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="collectionView" destination="vVa-AF-VPN" id="suv-4P-bKg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="755" y="173"/>
+            <point key="canvasLocation" x="754" y="173"/>
+        </scene>
+        <!--R30M View Controller Scene-->
+        <scene sceneID="3Al-HO-zcF">
+            <objects>
+                <viewController storyboardIdentifier="rule30v2" id="nAD-HM-Voq" userLabel="R30M View Controller Scene" customClass="R30ViewController" customModule="Automata" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aCf-vs-V6r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="718"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ISB-7e-ANX">
+                                <rect key="frame" x="57" y="184" width="300" height="160"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="500" constant="300" id="D8T-GH-wAW"/>
+                                    <constraint firstAttribute="height" constant="160" id="cVa-DJ-Ykf"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="ifb-0R-Pm2">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="v1Cell" id="YJx-sy-1bH" customClass="V1CollectionViewCell" customModule="Automata" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="nAD-HM-Voq" id="t5S-Ou-6rZ"/>
+                                    <outlet property="delegate" destination="nAD-HM-Voq" id="FgU-jw-nXE"/>
+                                    <outlet property="prefetchDataSource" destination="nAD-HM-Voq" id="UfU-2j-HmE"/>
+                                </connections>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rule 30: Medium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ob-L4-4bU">
+                                <rect key="frame" x="44.5" y="364" width="325" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="325" id="Ecu-7k-lAe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Intervals: 40  A small delay when swiping is seen when initiating the drag." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cNY-ZS-gKW">
+                                <rect key="frame" x="40.5" y="403" width="325" height="175"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="175" id="qre-ar-cuD"/>
+                                    <constraint firstAttribute="width" constant="325" id="zCE-Qw-H3y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cNY-ZS-gKW" firstAttribute="centerX" secondItem="8ob-L4-4bU" secondAttribute="centerX" constant="-4" id="6Ah-Nv-u6K"/>
+                            <constraint firstItem="ISB-7e-ANX" firstAttribute="centerY" secondItem="kT9-gk-gKT" secondAttribute="centerY" constant="-100" id="Ip1-5H-OeB"/>
+                            <constraint firstItem="cNY-ZS-gKW" firstAttribute="top" secondItem="8ob-L4-4bU" secondAttribute="bottom" id="bTt-zY-IFA"/>
+                            <constraint firstItem="8ob-L4-4bU" firstAttribute="top" secondItem="ISB-7e-ANX" secondAttribute="bottom" constant="20" id="bXz-cz-hH5"/>
+                            <constraint firstItem="8ob-L4-4bU" firstAttribute="centerX" secondItem="ISB-7e-ANX" secondAttribute="centerX" id="kEa-MW-NpZ"/>
+                            <constraint firstItem="ISB-7e-ANX" firstAttribute="centerX" secondItem="kT9-gk-gKT" secondAttribute="centerX" id="t1T-YT-NN2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kT9-gk-gKT"/>
+                    </view>
+                    <size key="freeformSize" width="414" height="718"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cellsPerRow">
+                            <integer key="value" value="40"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="collectionView" destination="ISB-7e-ANX" id="RHK-0m-G3G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CCh-2l-KLA" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1504" y="173"/>
+        </scene>
+        <!--R30L View Controller Scene-->
+        <scene sceneID="6Nj-IJ-rfw">
+            <objects>
+                <viewController storyboardIdentifier="rule30v3" id="Kai-mj-yoO" userLabel="R30L View Controller Scene" customClass="R30ViewController" customModule="Automata" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y83-fB-vLq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="718"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JgF-JV-P04">
+                                <rect key="frame" x="57" y="184" width="300" height="160"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="500" constant="300" id="RVP-A9-w0k"/>
+                                    <constraint firstAttribute="height" constant="160" id="YnN-pm-QUD"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="OjR-es-5mU">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="v1Cell" id="oeW-4f-n49" customClass="V1CollectionViewCell" customModule="Automata" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Kai-mj-yoO" id="fko-Hv-0zb"/>
+                                    <outlet property="delegate" destination="Kai-mj-yoO" id="scG-6R-Lay"/>
+                                    <outlet property="prefetchDataSource" destination="Kai-mj-yoO" id="JXq-Pj-bPZ"/>
+                                </connections>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rule 30: Large" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2J-pU-Twr" userLabel="Rule 30">
+                                <rect key="frame" x="44.5" y="364" width="325" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="325" id="df3-Jm-5Fb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wut-WF-Xhz">
+                                <rect key="frame" x="40.5" y="403" width="325" height="175"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="175" id="Moe-GF-rCj"/>
+                                    <constraint firstAttribute="width" constant="325" id="nhu-rh-ecK"/>
+                                </constraints>
+                                <mutableString key="text">Intervals: 40  I know you noticed that delay after you swiped, I did too..  I originally thought a CollectionView would be a great approach to this exercise, and although it was quick to get up and running, as we can see, the performance on high interval grids doesn't seem scalable.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JgF-JV-P04" firstAttribute="centerX" secondItem="4Lv-8y-5vN" secondAttribute="centerX" id="9wd-X3-q9I"/>
+                            <constraint firstItem="wut-WF-Xhz" firstAttribute="centerX" secondItem="f2J-pU-Twr" secondAttribute="centerX" constant="-4" id="KIE-V9-jBS"/>
+                            <constraint firstItem="f2J-pU-Twr" firstAttribute="centerX" secondItem="JgF-JV-P04" secondAttribute="centerX" id="WdR-Jn-ubd"/>
+                            <constraint firstItem="wut-WF-Xhz" firstAttribute="top" secondItem="f2J-pU-Twr" secondAttribute="bottom" id="aBh-V6-SHI"/>
+                            <constraint firstItem="f2J-pU-Twr" firstAttribute="top" secondItem="JgF-JV-P04" secondAttribute="bottom" constant="20" id="bOV-cF-8qe"/>
+                            <constraint firstItem="JgF-JV-P04" firstAttribute="centerY" secondItem="4Lv-8y-5vN" secondAttribute="centerY" constant="-100" id="dpd-cq-rQt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4Lv-8y-5vN"/>
+                    </view>
+                    <size key="freeformSize" width="414" height="718"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cellsPerRow">
+                            <integer key="value" value="80"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="collectionView" destination="JgF-JV-P04" id="XLi-Xz-fdZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DXc-gB-dEf" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2258" y="175"/>
         </scene>
     </scenes>
     <resources>

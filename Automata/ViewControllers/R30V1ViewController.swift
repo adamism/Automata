@@ -9,12 +9,13 @@
 import UIKit
 import Foundation
 
-class R30V1ViewController: UIViewController {
+class R30ViewController: UIViewController {
 	
 	@IBOutlet weak var collectionView: UICollectionView!
 	
 	private let cellID = "v1Cell"
-	private var cellsPerRow: Int = 80
+	
+	@IBInspectable var cellsPerRow: Int = 9
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -24,7 +25,7 @@ class R30V1ViewController: UIViewController {
 }
 
 // MARK: - UICollectionViewDataSource -
-extension R30V1ViewController: UICollectionViewDataSource {
+extension R30ViewController: UICollectionViewDataSource {
 
 	func numberOfSections(in collectionView: UICollectionView) -> Int {
 		return 1
@@ -48,7 +49,7 @@ extension R30V1ViewController: UICollectionViewDataSource {
 }
 
 // MARK: - UICollectionViewDelegateFlowLayout -
-extension R30V1ViewController : UICollectionViewDelegateFlowLayout {
+extension R30ViewController : UICollectionViewDelegateFlowLayout {
 	
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 		let sizePerItem = collectionView.frame.width / CGFloat(cellsPerRow)

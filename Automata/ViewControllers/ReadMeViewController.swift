@@ -22,15 +22,10 @@ class ReadMeViewController: UIViewController {
 	}
 	
 	private func showReadMe() {
-		let downView = try? DownView(frame: markDownView.bounds, markdownString: getReadMeContents()) { }
-		markDownView.addSubview(downView!)
-		markDownView.isHidden = false
-		markDownView.alpha = 0.0
+		let downViewFrame = CGRect(x: 0, y: 0, width: markDownView.frame.width, height: markDownView.frame.height)
+		let downView = try? DownView(frame: downViewFrame, markdownString: getReadMeContents()) { }
 		
-		UIView.animate(withDuration: 0.2, delay: 0.5, options: UIView.AnimationOptions.curveEaseInOut, animations: {
-			self.markDownView.transform = CGAffineTransform(translationX: 0, y: -20)
-			self.markDownView.alpha = 1.0
-		}, completion: nil)
+		markDownView.addSubview(downView!)
 	}
 
 	private func getReadMeContents() -> String {
