@@ -30,11 +30,27 @@ class PageViewController: UIPageViewController {
 			setViewControllers([firstViewController], direction: .forward, animated: true, completion: nil)
 		}
     }
-}
 	
+	// MARK: - Helpers -
+	private func newVc(viewController: String) -> UIViewController {
+		return UIStoryboard(name: storyboardId, bundle: nil).instantiateViewController(withIdentifier: viewController)
+	}
+	
+	private func configurePageControl() {
+		// The total number of pages that are available is based on how many available colors we have.
+		pageControl = UIPageControl(frame: CGRect(x: 0,y: view.bounds.height - 250, width: view.bounds.width, height: 50))
+		self.pageControl.numberOfPages = orderedViewControllers.count
+		self.pageControl.currentPage = 0
+		self.pageControl.tintColor = UIColor.black
+		self.pageControl.pageIndicatorTintColor = UIColor.lightGray
+		self.pageControl.currentPageIndicatorTintColor = UIColor.black
+		self.view.addSubview(pageControl)
+	}
+}
+
+// MARK: - PageView Data Source -
 extension PageViewController: UIPageViewControllerDataSource {
 	
-	// MARK: - PageView Data Source -
 	func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
 		guard let viewControllerIndex = orderedViewControllers.firstIndex(of: viewController) else { return nil }
 
@@ -59,27 +75,11 @@ extension PageViewController: UIPageViewControllerDataSource {
 	}
 }
 
+// MARK: - PageView Delegate -
 extension PageViewController: UIPageViewControllerDelegate {
 
-	// MARK: - PageView Delegate -
 	func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
 		let pageContentViewController = pageViewController.viewControllers![0]
 		self.pageControl.currentPage = orderedViewControllers.firstIndex(of: pageContentViewController)!
-	}
-	
-	// MARK: - Helpers -
-	private func newVc(viewController: String) -> UIViewController {
-		return UIStoryboard(name: storyboardId, bundle: nil).instantiateViewController(withIdentifier: viewController)
-	}
-	
-	private func configurePageControl() {
-		// The total number of pages that are available is based on how many available colors we have.
-		pageControl = UIPageControl(frame: CGRect(x: 0,y: view.bounds.height - 250, width: view.bounds.width, height: 50))
-		self.pageControl.numberOfPages = orderedViewControllers.count
-		self.pageControl.currentPage = 0
-		self.pageControl.tintColor = UIColor.black
-		self.pageControl.pageIndicatorTintColor = UIColor.lightGray
-		self.pageControl.currentPageIndicatorTintColor = UIColor.black
-		self.view.addSubview(pageControl)
 	}
 }

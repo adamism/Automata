@@ -68,7 +68,7 @@
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="1CO-He-mLd" customClass="PageViewController" customModule="Automata" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tM2-nw-XB7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-746" y="139"/>
+            <point key="canvasLocation" x="-752" y="175"/>
         </scene>
         <!--Welcome View Controller-->
         <scene sceneID="YAh-EB-6AQ">
@@ -185,7 +185,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="caCell" id="4Ap-bg-BeC" customClass="V1CollectionViewCell" customModule="Automata" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="v1Cell" id="4Ap-bg-BeC" customClass="V1CollectionViewCell" customModule="Automata" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -216,7 +216,7 @@
                                     <constraint firstAttribute="width" constant="300" id="IuO-WN-O2D"/>
                                     <constraint firstAttribute="height" constant="175" id="xex-cv-yzE"/>
                                 </constraints>
-                                <mutableString key="text">I know you noticed that delay after you swiped, I notice it too..   I originally thought a CollectionView would be a great approach to this exercise, and it was simple to get up and running, but as we can see, the performance is sub par.  Formula: topLeft != (top || topRight)</mutableString>
+                                <mutableString key="text">I know you noticed that delay after you swiped, I noticed it too..   I originally thought a CollectionView would be a great approach to this exercise, and although it was quick to get up and running, but as we can see, the performance is sub par.  Formula: topLeft != (top || topRight)</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>

@@ -13,15 +13,13 @@ class R30V1ViewController: UIViewController {
 	
 	@IBOutlet weak var collectionView: UICollectionView!
 	
-	private let cellID = "caCell"
-	private var itemsPerRow: Int = 80
-	private var numberOfRows: Int = 0
+	private let cellID = "v1Cell"
+	private var cellsPerRow: Int = 80
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
 		V1CollectionViewCell.register(with: collectionView)
-		numberOfRows = itemsPerRow * (itemsPerRow / 2)
 	}
 }
 
@@ -34,43 +32,18 @@ extension R30V1ViewController: UICollectionViewDataSource {
 	
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 		//Ai: Perhaps allow the user to adjust the cell count
-		return numberOfRows
+		return cellsPerRow * (cellsPerRow / 2)
 	}
 	
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-		return cellFor(indexPath: indexPath)
-	}
-
-	// MARK: - UICollectionViewDataSoure Helpers -
-	private func cellFor(indexPath: IndexPath) -> UICollectionViewCell {
-		let cell = V1CollectionViewCell.dequeue(from: collectionView, at: indexPath)
+		var cell = UICollectionViewCell.init()
 		
-		if isAfterFirstRow(indexPath: indexPath) {
-			let topCellIndexPath = IndexPath.init(item: indexPath.item - itemsPerRow, section: indexPath.section)
-			let topLeftCellIndexPath = IndexPath.init(item: topCellIndexPath.item - 1, section: topCellIndexPath.section)
-			let topRightCellIndexPath = IndexPath.init(item: topCellIndexPath.item + 1, section: topCellIndexPath.section)
-			
-			let topCell = collectionView.cellForItem(at: topCellIndexPath) as! V1CollectionViewCell
-			let topLeftCell = collectionView.cellForItem(at: topLeftCellIndexPath) as! V1CollectionViewCell
-			let topRightCell = collectionView.cellForItem(at: topRightCellIndexPath) as! V1CollectionViewCell
-			
-			if topLeftCell.isActivated != (topCell.isActivated || topRightCell.isActivated) {
-				cell.isActivated = true
-			}
-		} else if isOriginCell(indexPath: indexPath) {
-			cell.isActivated = true
+		let appDelegate = UIApplication.shared.delegate as! AppDelegate
+		if let cellManager = appDelegate.cellManager {
+			cell = cellManager.cellFor(indexPath: indexPath, collectionView: collectionView, cellsPerRow: cellsPerRow)
 		}
-
+		
 		return cell
-	}
-	
-	private func isOriginCell(indexPath: IndexPath) -> Bool {
-		//OriginCell is the middle of the first row
-		return indexPath.item < itemsPerRow && indexPath.item == itemsPerRow / 2
-	}
-	
-	private func isAfterFirstRow(indexPath: IndexPath) -> Bool {
-		return indexPath.item - itemsPerRow > 0
 	}
 }
 
@@ -78,7 +51,7 @@ extension R30V1ViewController: UICollectionViewDataSource {
 extension R30V1ViewController : UICollectionViewDelegateFlowLayout {
 	
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-		let sizePerItem = view.frame.width / CGFloat(itemsPerRow)
+		let sizePerItem = view.frame.width / CGFloat(cellsPerRow)
 		return CGSize(width: sizePerItem, height: sizePerItem)
 	}
 }

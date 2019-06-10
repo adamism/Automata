@@ -17,7 +17,7 @@ class WelcomeViewController: UIViewController {
 	override func viewDidLoad() {
         super.viewDidLoad()
 		
-		//Setting this here because it's set to white on the storyboard for easy editing.
+		//Setting this here because it's set to white on the storyboard for easier editing.
 		view.backgroundColor = .clear
 
 		animateScene()
