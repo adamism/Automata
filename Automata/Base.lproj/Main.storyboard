@@ -78,30 +78,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="718"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UYM-IP-PUS">
-                                <rect key="frame" x="57" y="297" width="300" height="100"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Thanks so much for the opportunity to work on an exercise like this. Functions that relate to visuals are right up my alley!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UYM-IP-PUS">
+                                <rect key="frame" x="57" y="326.5" width="300" height="75"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="Sm0-mw-Y2u"/>
-                                    <constraint firstAttribute="height" constant="100" id="xzV-mK-HWU"/>
+                                    <constraint firstAttribute="height" constant="75" id="xzV-mK-HWU"/>
                                 </constraints>
-                                <string key="text">Thanks so much for the opportunity to work on an exercise like this. Being able to work on something that involved functions relating to visuals is right up my alley!</string>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hey there!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOH-wR-onj">
-                                <rect key="frame" x="62" y="239" width="290" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hey there!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOH-wR-onj">
+                                <rect key="frame" x="62" y="279" width="290" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="BGl-Yv-yWT"/>
                                     <constraint firstAttribute="width" constant="290" id="Xmn-y0-VXN"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="And it was a blast going down so many rabbit holes 👍🏼" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mmp-NB-cGc">
-                                <rect key="frame" x="57" y="547" width="300" height="50"/>
+                                <rect key="frame" x="57" y="564" width="300" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="oQ5-ql-h3z"/>
@@ -114,12 +113,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="UYM-IP-PUS" firstAttribute="centerX" secondItem="zOH-wR-onj" secondAttribute="centerX" id="1IZ-MK-gqt"/>
                             <constraint firstItem="mmp-NB-cGc" firstAttribute="leading" secondItem="UYM-IP-PUS" secondAttribute="leading" id="45K-iC-rVg"/>
-                            <constraint firstItem="zOH-wR-onj" firstAttribute="centerY" secondItem="wWl-tu-JYE" secondAttribute="centerY" constant="-100" id="CtQ-gF-Iuh"/>
+                            <constraint firstItem="zOH-wR-onj" firstAttribute="centerY" secondItem="wWl-tu-JYE" secondAttribute="centerY" constant="-60" id="CtQ-gF-Iuh"/>
                             <constraint firstItem="zOH-wR-onj" firstAttribute="centerX" secondItem="wWl-tu-JYE" secondAttribute="centerX" id="Kfp-UZ-pbz"/>
-                            <constraint firstItem="mmp-NB-cGc" firstAttribute="top" secondItem="UYM-IP-PUS" secondAttribute="bottom" constant="150" id="eN6-pw-wfN"/>
-                            <constraint firstItem="UYM-IP-PUS" firstAttribute="top" secondItem="zOH-wR-onj" secondAttribute="bottom" constant="8" id="xeu-ie-4qb"/>
-                            <constraint firstItem="UYM-IP-PUS" firstAttribute="leading" secondItem="zOH-wR-onj" secondAttribute="leading" constant="-5" id="xvY-SO-ZeP"/>
+                            <constraint firstItem="UYM-IP-PUS" firstAttribute="centerY" secondItem="wWl-tu-JYE" secondAttribute="centerY" id="fn4-kQ-bzG"/>
+                            <constraint firstItem="wWl-tu-JYE" firstAttribute="bottom" secondItem="mmp-NB-cGc" secondAttribute="bottom" constant="70" id="gzh-lx-w6e"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wWl-tu-JYE"/>
                     </view>
@@ -128,7 +127,6 @@
                         <outlet property="textView1" destination="UYM-IP-PUS" id="gUZ-Kc-thh"/>
                         <outlet property="textView2" destination="mmp-NB-cGc" id="EKq-tg-EhZ"/>
                         <outlet property="welcomeLabel" destination="zOH-wR-onj" id="3Vo-Vb-wdE"/>
-                        <outlet property="welcomeLabelCenterYConstraint" destination="CtQ-gF-Iuh" id="IGl-mY-CEp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9FH-b3-ajt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -214,16 +212,16 @@
                                 </connections>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rule 30: Small" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Oz-Hu-DpN" userLabel="Rule 30">
-                                <rect key="frame" x="44.5" y="364" width="325" height="39"/>
+                                <rect key="frame" x="44.5" y="364" width="325" height="38.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="325" id="xub-65-9b3"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Intervals: 20  Nice. The CollectionView produces the grid pretty quickly - things are snappy." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xsq-Mk-qYh">
-                                <rect key="frame" x="40.5" y="403" width="325" height="175"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Intervals: 20  &quot;Nice. The CollectionView produces the grid pretty quickly - things are snappy.&quot;" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xsq-Mk-qYh">
+                                <rect key="frame" x="40.5" y="402.5" width="325" height="175"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="325" id="IuO-WN-O2D"/>
@@ -300,11 +298,11 @@
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="325" id="Ecu-7k-lAe"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Intervals: 40  A small delay when swiping is noticed when initiating the drag." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cNY-ZS-gKW">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Intervals: 40  &quot;A small delay when swiping is noticed when initiating the drag.&quot;" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cNY-ZS-gKW">
                                 <rect key="frame" x="40.5" y="403" width="325" height="175"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -382,7 +380,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="325" id="df3-Jm-5Fb"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -393,7 +391,7 @@
                                     <constraint firstAttribute="height" constant="200" id="Moe-GF-rCj"/>
                                     <constraint firstAttribute="width" constant="325" id="nhu-rh-ecK"/>
                                 </constraints>
-                                <mutableString key="text">Intervals: 80  I know you noticed that delay after you swiped, I did too..  I originally thought a CollectionView would be a great approach to this exercise, and although it was quick to get up and running, as we can see, the performance on high interval grids doesn't seem scalable.</mutableString>
+                                <mutableString key="text">Intervals: 80  "I know you noticed that delay after you swiped, I did too.. 🤦🏻‍♂️  I thought a CollectionView would be a great approach to this exercise, and although it was quick to get up and running, it doesn't appear that CollectionViews are the way to go if things need to scale."</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>

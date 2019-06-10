@@ -25,7 +25,7 @@ class MainViewController: UIViewController {
 			self.logoImageView.alpha = 0.0
 		}, completion: { _ in
 			self.logoImageView.bottomAnchor.constraint(equalTo: self.containerView.topAnchor, constant: -25).isActive = true
-			UIView.animate(withDuration: 0.2) {
+			UIView.animate(withDuration: 0.4) {
 				self.logoImageView.transform = CGAffineTransform(translationX: 0, y: -5)
 				self.logoImageView.alpha = 1.0
 			}
