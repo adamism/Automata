@@ -14,13 +14,19 @@ class R30ViewController: UIViewController {
 	@IBOutlet weak var collectionView: UICollectionView!
 	
 	private let cellID = "v1Cell"
-	
+	private var cellSize: CGFloat = 0
 	@IBInspectable var cellsPerRow: Int = 9
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
 		V1CollectionViewCell.register(with: collectionView)
+		
+		cellSize = collectionView.frame.width / CGFloat(cellsPerRow)
+		
+		//Because the collectionView starts at x:0, y:0, to dynamically center the view,
+		//we need to shift the entire thing half a cell.width to the left.
+		collectionView.transform = CGAffineTransform(translationX: -(cellSize / 2), y: 0)
 	}
 }
 
@@ -52,7 +58,6 @@ extension R30ViewController: UICollectionViewDataSource {
 extension R30ViewController : UICollectionViewDelegateFlowLayout {
 	
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-		let sizePerItem = collectionView.frame.width / CGFloat(cellsPerRow)
-		return CGSize(width: sizePerItem, height: sizePerItem)
+		return CGSize(width: cellSize, height: cellSize)
 	}
 }
