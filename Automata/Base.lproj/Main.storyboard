@@ -60,7 +60,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kC4-n8-uj6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1504.3478260869567" y="138.61607142857142"/>
+            <point key="canvasLocation" x="-1510" y="139"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="1ts-kx-RtB">
@@ -75,11 +75,11 @@
             <objects>
                 <viewController storyboardIdentifier="welcome" id="QKn-e5-pX1" userLabel="Welcome View Controller" customClass="WelcomeViewController" customModule="Automata" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Se-vF-OUF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="718"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UYM-IP-PUS">
-                                <rect key="frame" x="57" y="386" width="300" height="100"/>
+                                <rect key="frame" x="57" y="297" width="300" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="Sm0-mw-Y2u"/>
@@ -91,7 +91,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hey there!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOH-wR-onj">
-                                <rect key="frame" x="62" y="328" width="290" height="50"/>
+                                <rect key="frame" x="62" y="239" width="290" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="BGl-Yv-yWT"/>
                                     <constraint firstAttribute="width" constant="290" id="Xmn-y0-VXN"/>
@@ -100,8 +100,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="I had a blast going down rabbit holes and trying new things👍🏼" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mmp-NB-cGc">
-                                <rect key="frame" x="57" y="636" width="300" height="50"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="And it was a blast going down so many rabbit holes 👍🏼" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mmp-NB-cGc">
+                                <rect key="frame" x="57" y="547" width="300" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="oQ5-ql-h3z"/>
@@ -123,6 +123,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wWl-tu-JYE"/>
                     </view>
+                    <size key="freeformSize" width="414" height="718"/>
                     <connections>
                         <outlet property="textView1" destination="UYM-IP-PUS" id="gUZ-Kc-thh"/>
                         <outlet property="textView2" destination="mmp-NB-cGc" id="EKq-tg-EhZ"/>
@@ -131,18 +132,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9FH-b3-ajt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="138.61607142857142"/>
+            <point key="canvasLocation" x="-1" y="174"/>
         </scene>
         <!--Read Me View Controller-->
         <scene sceneID="oVq-aR-QS0">
             <objects>
                 <viewController storyboardIdentifier="readMe" id="Kzd-7j-EJG" customClass="ReadMeViewController" customModule="Automata" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rvi-yP-Whr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="718"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hht-ff-7Pz">
-                                <rect key="frame" x="0.0" y="44" width="384" height="768"/>
+                                <rect key="frame" x="0.0" y="44" width="384" height="590"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
@@ -155,28 +156,29 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="G83-t5-JJ0"/>
                     </view>
+                    <size key="freeformSize" width="414" height="718"/>
                     <connections>
                         <outlet property="markDownView" destination="hht-ff-7Pz" id="02r-2u-QXF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J3a-fg-3qF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1542" y="139"/>
+            <point key="canvasLocation" x="1507" y="175"/>
         </scene>
         <!--R30V1ViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="rule30v1" id="BYZ-38-t0r" userLabel="R30V1ViewController" customClass="R30V1ViewController" customModule="Automata" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="718"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vVa-AF-VPN">
-                                <rect key="frame" x="0.0" y="241" width="414" height="212"/>
+                                <rect key="frame" x="57" y="204" width="300" height="160"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" priority="500" constant="414" id="OMd-N5-iBo"/>
-                                    <constraint firstAttribute="height" constant="212" id="nik-I4-v1b"/>
+                                    <constraint firstAttribute="width" priority="500" constant="300" id="OMd-N5-iBo"/>
+                                    <constraint firstAttribute="height" constant="160" id="nik-I4-v1b"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Dme-xi-cca">
                                     <size key="itemSize" width="50" height="50"/>
@@ -201,16 +203,16 @@
                                 </connections>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rule 30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Oz-Hu-DpN">
-                                <rect key="frame" x="32" y="453" width="350" height="39"/>
+                                <rect key="frame" x="57" y="364" width="300" height="39"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="350" id="xub-65-9b3"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="xub-65-9b3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xsq-Mk-qYh">
-                                <rect key="frame" x="53" y="492" width="300" height="175"/>
+                                <rect key="frame" x="53" y="403" width="300" height="175"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="IuO-WN-O2D"/>
@@ -223,23 +225,23 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="vVa-AF-VPN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="74t-yR-lQd"/>
+                            <constraint firstItem="vVa-AF-VPN" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-80" id="9sy-bM-WnD"/>
+                            <constraint firstItem="vVa-AF-VPN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9zZ-5P-SUM"/>
                             <constraint firstItem="Xsq-Mk-qYh" firstAttribute="top" secondItem="0Oz-Hu-DpN" secondAttribute="bottom" id="A9b-jw-KKW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vVa-AF-VPN" secondAttribute="trailing" id="Ao2-Qz-9cp"/>
                             <constraint firstItem="0Oz-Hu-DpN" firstAttribute="centerX" secondItem="vVa-AF-VPN" secondAttribute="centerX" id="HjG-LX-WXK"/>
                             <constraint firstItem="0Oz-Hu-DpN" firstAttribute="top" secondItem="vVa-AF-VPN" secondAttribute="bottom" id="IXF-Af-pdx"/>
                             <constraint firstItem="Xsq-Mk-qYh" firstAttribute="centerX" secondItem="0Oz-Hu-DpN" secondAttribute="centerX" constant="-4" id="h3K-84-5Ts"/>
-                            <constraint firstItem="vVa-AF-VPN" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="mcs-ac-ONM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <size key="freeformSize" width="414" height="718"/>
                     <connections>
                         <outlet property="collectionView" destination="vVa-AF-VPN" id="suv-4P-bKg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="782.60869565217399" y="138.61607142857142"/>
+            <point key="canvasLocation" x="755" y="173"/>
         </scene>
     </scenes>
     <resources>
