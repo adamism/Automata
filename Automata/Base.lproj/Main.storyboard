@@ -128,6 +128,7 @@
                         <outlet property="textView1" destination="UYM-IP-PUS" id="gUZ-Kc-thh"/>
                         <outlet property="textView2" destination="mmp-NB-cGc" id="EKq-tg-EhZ"/>
                         <outlet property="welcomeLabel" destination="zOH-wR-onj" id="3Vo-Vb-wdE"/>
+                        <outlet property="welcomeLabelCenterYConstraint" destination="CtQ-gF-Iuh" id="IGl-mY-CEp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9FH-b3-ajt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -386,10 +387,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wut-WF-Xhz">
-                                <rect key="frame" x="40.5" y="403" width="325" height="175"/>
+                                <rect key="frame" x="40.5" y="403" width="325" height="200"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="175" id="Moe-GF-rCj"/>
+                                    <constraint firstAttribute="height" constant="200" id="Moe-GF-rCj"/>
                                     <constraint firstAttribute="width" constant="325" id="nhu-rh-ecK"/>
                                 </constraints>
                                 <mutableString key="text">Intervals: 80  I know you noticed that delay after you swiped, I did too..  I originally thought a CollectionView would be a great approach to this exercise, and although it was quick to get up and running, as we can see, the performance on high interval grids doesn't seem scalable.</mutableString>
