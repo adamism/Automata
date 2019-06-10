@@ -30,5 +30,73 @@ class AutomataTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-
+	
+	//Ai: Will need to move these out to separate classes
+	func testIsOriginCell_NotMiddleCell() {
+		//Given
+		let testCellManager = CellManager.init()
+		let testIndexPath =  IndexPath(item: 2, section: 0)
+		let testCellsPerRow = 10
+		
+		//When
+		let isOrigin = testCellManager.isOriginCell(indexPath: testIndexPath, cellsPerRow: testCellsPerRow)
+		
+		//Then
+		XCTAssertFalse(isOrigin)
+	}
+	
+	func testIsOriginCell_MiddleCell_EvenNumber() {
+		//Given
+		let testCellManager = CellManager.init()
+		let testIndexPath =  IndexPath(item: 5, section: 0)
+		let testCellsPerRow = 10
+		
+		//When
+		let isOrigin = testCellManager.isOriginCell(indexPath: testIndexPath, cellsPerRow: testCellsPerRow)
+		
+		//Then
+		XCTAssertTrue(isOrigin)
+	}
+	
+	func testIsOriginCell_MiddleCell_OddNumberRoundsDown() {
+		//Given
+		let testCellManager = CellManager.init()
+		let testIndexPath =  IndexPath(item: 4, section: 0)
+		let testCellsPerRow = 9
+		
+		//When
+		let isOrigin = testCellManager.isOriginCell(indexPath: testIndexPath, cellsPerRow: testCellsPerRow)
+		
+		//Then
+		XCTAssertTrue(isOrigin)
+	}
+	
+	func testIsOriginCell_MiddleCell_OddNumberDoesNotRoundUp() {
+		//Given
+		let testCellManager = CellManager.init()
+		let testIndexPath =  IndexPath(item: 5, section: 0)
+		let testCellsPerRow = 9
+		
+		//When
+		let isOrigin = testCellManager.isOriginCell(indexPath: testIndexPath, cellsPerRow: testCellsPerRow)
+		
+		//Then
+		XCTAssertFalse(isOrigin)
+	}
+	
+	func testCellFor_ActiveCell() {
+		//Given
+		
+		//When
+		
+		//Then
+	}
+	
+	func testCellFor_DisabledCell() {
+		//Given
+		
+		//When
+		
+		//Then
+	}
 }
