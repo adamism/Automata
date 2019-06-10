@@ -51,7 +51,7 @@ extension R30V1ViewController: UICollectionViewDataSource {
 extension R30V1ViewController : UICollectionViewDelegateFlowLayout {
 	
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-		let sizePerItem = view.frame.width / CGFloat(cellsPerRow)
+		let sizePerItem = collectionView.frame.width / CGFloat(cellsPerRow)
 		return CGSize(width: sizePerItem, height: sizePerItem)
 	}
 }
