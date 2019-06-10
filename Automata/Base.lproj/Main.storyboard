@@ -174,7 +174,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vVa-AF-VPN">
-                                <rect key="frame" x="57" y="204" width="300" height="160"/>
+                                <rect key="frame" x="57" y="184" width="300" height="160"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" priority="500" constant="300" id="OMd-N5-iBo"/>
@@ -203,33 +203,33 @@
                                 </connections>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rule 30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Oz-Hu-DpN">
-                                <rect key="frame" x="57" y="364" width="300" height="39"/>
+                                <rect key="frame" x="32" y="364" width="350" height="39"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="xub-65-9b3"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="350" id="xub-65-9b3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xsq-Mk-qYh">
-                                <rect key="frame" x="53" y="403" width="300" height="175"/>
+                                <rect key="frame" x="28" y="403" width="350" height="175"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="IuO-WN-O2D"/>
+                                    <constraint firstAttribute="width" constant="350" id="IuO-WN-O2D"/>
                                     <constraint firstAttribute="height" constant="175" id="xex-cv-yzE"/>
                                 </constraints>
-                                <mutableString key="text">I know you noticed that delay after you swiped, I noticed it too..   I originally thought a CollectionView would be a great approach to this exercise, and although it was quick to get up and running, but as we can see, the performance is sub par.  Formula: topLeft != (top || topRight)</mutableString>
+                                <mutableString key="text">Formula: topLeft != (top || topRight)  I know you noticed that delay after you swiped, I noticed it too..   I originally thought a CollectionView would be a great approach to this exercise, and although it was quick to get up and running, but as we can see, the performance is sub par.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="vVa-AF-VPN" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-80" id="9sy-bM-WnD"/>
+                            <constraint firstItem="vVa-AF-VPN" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-100" id="9sy-bM-WnD"/>
                             <constraint firstItem="vVa-AF-VPN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9zZ-5P-SUM"/>
                             <constraint firstItem="Xsq-Mk-qYh" firstAttribute="top" secondItem="0Oz-Hu-DpN" secondAttribute="bottom" id="A9b-jw-KKW"/>
                             <constraint firstItem="0Oz-Hu-DpN" firstAttribute="centerX" secondItem="vVa-AF-VPN" secondAttribute="centerX" id="HjG-LX-WXK"/>
-                            <constraint firstItem="0Oz-Hu-DpN" firstAttribute="top" secondItem="vVa-AF-VPN" secondAttribute="bottom" id="IXF-Af-pdx"/>
+                            <constraint firstItem="0Oz-Hu-DpN" firstAttribute="top" secondItem="vVa-AF-VPN" secondAttribute="bottom" constant="20" id="IXF-Af-pdx"/>
                             <constraint firstItem="Xsq-Mk-qYh" firstAttribute="centerX" secondItem="0Oz-Hu-DpN" secondAttribute="centerX" constant="-4" id="h3K-84-5Ts"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
