@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0127C95922ACB8C700BE73A9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 01EB440222AC324B00502396 /* README.md */; };
 		0127C95B22AD469B00BE73A9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127C95A22AD469A00BE73A9 /* MainViewController.swift */; };
 		0127C95D22AD4E1200BE73A9 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127C95C22AD4E1200BE73A9 /* WelcomeViewController.swift */; };
 		0138540722AC230C00D6CDCD /* ReadMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138540622AC230C00D6CDCD /* ReadMeViewController.swift */; };
@@ -22,6 +21,7 @@
 		01DA1CE022AAFE5C00158F6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01DA1CDE22AAFE5C00158F6A /* LaunchScreen.storyboard */; };
 		01DA1CEB22AAFE5C00158F6A /* AutomataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA1CEA22AAFE5C00158F6A /* AutomataTests.swift */; };
 		01DA1CF622AAFE5C00158F6A /* AutomataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA1CF522AAFE5C00158F6A /* AutomataUITests.swift */; };
+		01E77C7022AF3B3A009B565F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 01E77C6F22AF3B39009B565F /* README.md */; };
 		30D6874C4A7DBD82664A6682 /* Pods_Automata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37AB74C434CA1EC56DDEEF5F /* Pods_Automata.framework */; };
 		997B828C4A20C3CCE80CE258 /* Pods_AutomataTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B537C970EA38C62A8DF870AF /* Pods_AutomataTests.framework */; };
 		E1C72DD1E61BDB8615F2E8A6 /* Pods_AutomataUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 203A9D5DA6073166FCF0A47C /* Pods_AutomataUITests.framework */; };
@@ -65,7 +65,7 @@
 		01DA1CF122AAFE5C00158F6A /* AutomataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutomataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01DA1CF522AAFE5C00158F6A /* AutomataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomataUITests.swift; sourceTree = "<group>"; };
 		01DA1CF722AAFE5C00158F6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		01EB440222AC324B00502396 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		01E77C6F22AF3B39009B565F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		203A9D5DA6073166FCF0A47C /* Pods_AutomataUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutomataUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37AB74C434CA1EC56DDEEF5F /* Pods_Automata.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Automata.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		582DD23750338BA876AC34AA /* Pods-Automata.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Automata.release.xcconfig"; path = "Target Support Files/Pods-Automata/Pods-Automata.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +136,7 @@
 		01DA1CC622AAFE5B00158F6A = {
 			isa = PBXGroup;
 			children = (
+				01E77C6F22AF3B39009B565F /* README.md */,
 				01DA1CD122AAFE5B00158F6A /* Automata */,
 				01DA1CE922AAFE5C00158F6A /* AutomataTests */,
 				01DA1CF422AAFE5C00158F6A /* AutomataUITests */,
@@ -164,7 +165,6 @@
 				01DA1CE122AAFE5C00158F6A /* Info.plist */,
 				01DA1CDE22AAFE5C00158F6A /* LaunchScreen.storyboard */,
 				01DA1CD622AAFE5B00158F6A /* Main.storyboard */,
-				01EB440222AC324B00502396 /* README.md */,
 				0138540522AC228C00D6CDCD /* ViewControllers */,
 				0169F57322ADCD320069C659 /* ViewModels */,
 				0138540422AC228500D6CDCD /* Views */,
@@ -321,8 +321,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0127C95922ACB8C700BE73A9 /* README.md in Resources */,
 				01DA1CE022AAFE5C00158F6A /* LaunchScreen.storyboard in Resources */,
+				01E77C7022AF3B3A009B565F /* README.md in Resources */,
 				01DA1CDD22AAFE5C00158F6A /* Assets.xcassets in Resources */,
 				01DA1CD822AAFE5B00158F6A /* Main.storyboard in Resources */,
 			);
