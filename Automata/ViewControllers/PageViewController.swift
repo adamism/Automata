@@ -26,11 +26,13 @@ class PageViewController: UIPageViewController {
 		self.delegate = self
 		self.dataSource = self
 		
-		configurePageControl()
-
 		if let firstViewController = orderedViewControllers.first {
 			setViewControllers([firstViewController], direction: .forward, animated: true, completion: nil)
+		} else {
+			print("Something went wrong getting the ViewController array.")
 		}
+		
+		configurePageControl()
     }
 	
 	// MARK: - Helpers -
@@ -39,18 +41,19 @@ class PageViewController: UIPageViewController {
 	}
 	
 	private func configurePageControl() {
-		// The total number of pages that are available is based on how many available colors we have.
 		pageControl = UIPageControl(frame: CGRect(x: 0,y: 0, width: view.bounds.width, height: 50))
 		pageControl.numberOfPages = orderedViewControllers.count
 		pageControl.currentPage = 0
 		pageControl.tintColor = UIColor.black
 		pageControl.pageIndicatorTintColor = UIColor.lightGray
 		pageControl.currentPageIndicatorTintColor = UIColor.black
+		pageControl.translatesAutoresizingMaskIntoConstraints = false
 		view.addSubview(pageControl)
 		
-		pageControl.translatesAutoresizingMaskIntoConstraints = false
+		// The action of using a swipe to progress through the app is essential.
+		// Raising the PageControl slightly, will hopefully ensure the user notices it's presence.
+		pageControl.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -15).isActive = true
 		pageControl.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
-		pageControl.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
 	}
 }
 

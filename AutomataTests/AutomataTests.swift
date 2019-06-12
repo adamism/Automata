@@ -31,7 +31,7 @@ class AutomataTests: XCTestCase {
         }
     }
 	
-	//Ai: Will need to move these out to separate classes
+// MARK: - R30CollectionViewCell Tests -
 	func testIsOriginCell_NotMiddleCell() {
 		//Given
 		let testCellManager = CellManager.init()
@@ -84,19 +84,49 @@ class AutomataTests: XCTestCase {
 		XCTAssertFalse(isOrigin)
 	}
 	
-	func testCellFor_ActiveCell() {
+	
+// MARK: - R30CollectionViewCell Tests -
+	func testCellGetter_isActive() {
 		//Given
+		let testCell = R30CollectionViewCell()
 		
 		//When
+		testCell.backgroundColor = .black
 		
 		//Then
+		XCTAssert(testCell.isActivated)
 	}
 	
-	func testCellFor_DisabledCell() {
+	func testCellGetter_isDisabled() {
 		//Given
+		let testCell = R30CollectionViewCell()
 		
 		//When
+		testCell.backgroundColor = .white
 		
 		//Then
+		XCTAssertFalse(testCell.isActivated)
+	}
+	
+	func testCellSetter_isActive() {
+		//Given
+		let testCell = R30CollectionViewCell()
+		
+		//When
+		testCell.isActivated = true
+		
+		//Then
+		XCTAssert(testCell.backgroundColor == .black)
+	}
+	
+	func testCellSetter_isDisabled() {
+		//Given
+		let testCell = R30CollectionViewCell()
+		
+		//When
+		testCell.isActivated = false
+		
+		//Then
+		XCTAssert(testCell.backgroundColor == .white)
 	}
 }

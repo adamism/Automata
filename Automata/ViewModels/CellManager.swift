@@ -33,7 +33,7 @@ class CellManager {
 	}
 	
 	func isOriginCell(indexPath: IndexPath, cellsPerRow: Int) -> Bool {
-		//OriginCell is the middle of the first row
+		//Middle of the first row
 		return indexPath.item < cellsPerRow && indexPath.item == cellsPerRow / 2
 	}
 

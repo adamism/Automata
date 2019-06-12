@@ -24,8 +24,8 @@ class R30ViewController: UIViewController {
 		
 		cellSize = collectionView.frame.width / CGFloat(cellsPerRow)
 		
-		//Because the collectionView starts at x:0, y:0, to dynamically center the view,
-		//we need to shift the entire thing half a cell.width to the left.
+		//Because the collectionView starts at x:0, y:0, to truly center the view,
+		//we need to shift the entire thing half a cell to the left.
 		collectionView.transform = CGAffineTransform(translationX: -(cellSize / 2), y: 0)
 	}
 }
@@ -38,7 +38,6 @@ extension R30ViewController: UICollectionViewDataSource {
 	}
 	
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-		//Ai: Perhaps allow the user to adjust the cell count
 		return cellsPerRow * (cellsPerRow / 2)
 	}
 	
@@ -48,6 +47,8 @@ extension R30ViewController: UICollectionViewDataSource {
 		let appDelegate = UIApplication.shared.delegate as! AppDelegate
 		if let cellManager = appDelegate.cellManager {
 			cell = cellManager.cellFor(indexPath: indexPath, collectionView: collectionView, cellsPerRow: cellsPerRow)
+		} else {
+			print("appDelegate.cellManager is nil")
 		}
 		
 		return cell

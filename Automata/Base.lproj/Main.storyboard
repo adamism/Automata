@@ -211,34 +211,43 @@
                                     <outlet property="prefetchDataSource" destination="BYZ-38-t0r" id="9uZ-zh-GD3"/>
                                 </connections>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rule 30: Small" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Oz-Hu-DpN" userLabel="Rule 30">
-                                <rect key="frame" x="44.5" y="364" width="325" height="38.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="325" id="xub-65-9b3"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Intervals: 20  &quot;Nice. The CollectionView produces the grid pretty quickly - things are snappy.&quot;" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xsq-Mk-qYh">
-                                <rect key="frame" x="40.5" y="402.5" width="325" height="175"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="325" id="IuO-WN-O2D"/>
-                                    <constraint firstAttribute="height" constant="175" id="xex-cv-yzE"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="q6a-R1-1SU">
+                                <rect key="frame" x="44.5" y="364" width="325" height="340"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rule 30: Small" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Oz-Hu-DpN" userLabel="Rule 30">
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="38.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="325" id="xub-65-9b3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intervals: 20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9p-Cd-g5c">
+                                        <rect key="frame" x="0.0" y="48.5" width="325" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="&quot;Nice. The CollectionView produces the grid pretty quickly - things are snappy.&quot;" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xsq-Mk-qYh">
+                                        <rect key="frame" x="0.0" y="79" width="325" height="261"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="325" id="IuO-WN-O2D"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="vVa-AF-VPN" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-100" id="9sy-bM-WnD"/>
                             <constraint firstItem="vVa-AF-VPN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9zZ-5P-SUM"/>
-                            <constraint firstItem="Xsq-Mk-qYh" firstAttribute="top" secondItem="0Oz-Hu-DpN" secondAttribute="bottom" id="A9b-jw-KKW"/>
-                            <constraint firstItem="0Oz-Hu-DpN" firstAttribute="centerX" secondItem="vVa-AF-VPN" secondAttribute="centerX" id="HjG-LX-WXK"/>
-                            <constraint firstItem="0Oz-Hu-DpN" firstAttribute="top" secondItem="vVa-AF-VPN" secondAttribute="bottom" constant="20" id="IXF-Af-pdx"/>
-                            <constraint firstItem="Xsq-Mk-qYh" firstAttribute="centerX" secondItem="0Oz-Hu-DpN" secondAttribute="centerX" constant="-4" id="h3K-84-5Ts"/>
+                            <constraint firstItem="q6a-R1-1SU" firstAttribute="top" secondItem="vVa-AF-VPN" secondAttribute="bottom" constant="20" id="bTe-FX-aDc"/>
+                            <constraint firstItem="q6a-R1-1SU" firstAttribute="centerX" secondItem="vVa-AF-VPN" secondAttribute="centerX" id="mmr-HK-GN1"/>
+                            <constraint firstItem="q6a-R1-1SU" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="20" id="pDO-0p-yz7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -254,7 +263,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="754" y="173"/>
+            <point key="canvasLocation" x="753.62318840579712" y="172.76785714285714"/>
         </scene>
         <!--R30M View Controller Scene-->
         <scene sceneID="3Al-HO-zcF">
@@ -293,33 +302,42 @@
                                     <outlet property="prefetchDataSource" destination="nAD-HM-Voq" id="UfU-2j-HmE"/>
                                 </connections>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rule 30: Medium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ob-L4-4bU">
-                                <rect key="frame" x="44.5" y="364" width="325" height="39"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="325" id="Ecu-7k-lAe"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Intervals: 40  &quot;A small delay when swiping is noticed when initiating the drag.&quot;" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cNY-ZS-gKW">
-                                <rect key="frame" x="40.5" y="403" width="325" height="175"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="175" id="qre-ar-cuD"/>
-                                    <constraint firstAttribute="width" constant="325" id="zCE-Qw-H3y"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="og2-WY-Iyp">
+                                <rect key="frame" x="44.5" y="364" width="325" height="340"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rule 30: Medium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="onc-cL-pO4" userLabel="Rule 30">
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="38.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="325" id="XgS-fd-fU4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intervals: 40 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQu-IM-RtU">
+                                        <rect key="frame" x="0.0" y="48.5" width="325" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="&quot;A small delay when swiping is noticed when initiating the drag.&quot;" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vpB-MC-ztO">
+                                        <rect key="frame" x="0.0" y="79" width="325" height="261"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="325" id="uRj-wq-Fqn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="cNY-ZS-gKW" firstAttribute="centerX" secondItem="8ob-L4-4bU" secondAttribute="centerX" constant="-4" id="6Ah-Nv-u6K"/>
+                            <constraint firstItem="og2-WY-Iyp" firstAttribute="bottom" secondItem="kT9-gk-gKT" secondAttribute="bottom" constant="20" id="6go-pY-Hts"/>
                             <constraint firstItem="ISB-7e-ANX" firstAttribute="centerY" secondItem="kT9-gk-gKT" secondAttribute="centerY" constant="-100" id="Ip1-5H-OeB"/>
-                            <constraint firstItem="cNY-ZS-gKW" firstAttribute="top" secondItem="8ob-L4-4bU" secondAttribute="bottom" id="bTt-zY-IFA"/>
-                            <constraint firstItem="8ob-L4-4bU" firstAttribute="top" secondItem="ISB-7e-ANX" secondAttribute="bottom" constant="20" id="bXz-cz-hH5"/>
-                            <constraint firstItem="8ob-L4-4bU" firstAttribute="centerX" secondItem="ISB-7e-ANX" secondAttribute="centerX" id="kEa-MW-NpZ"/>
+                            <constraint firstItem="og2-WY-Iyp" firstAttribute="centerX" secondItem="ISB-7e-ANX" secondAttribute="centerX" id="QwD-Kh-sjw"/>
+                            <constraint firstItem="og2-WY-Iyp" firstAttribute="top" secondItem="ISB-7e-ANX" secondAttribute="bottom" constant="20" id="pHz-LU-VVh"/>
                             <constraint firstItem="ISB-7e-ANX" firstAttribute="centerX" secondItem="kT9-gk-gKT" secondAttribute="centerX" id="t1T-YT-NN2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kT9-gk-gKT"/>
@@ -375,35 +393,44 @@
                                     <outlet property="prefetchDataSource" destination="Kai-mj-yoO" id="JXq-Pj-bPZ"/>
                                 </connections>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rule 30: Large" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2J-pU-Twr" userLabel="Rule 30">
-                                <rect key="frame" x="44.5" y="364" width="325" height="39"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="325" id="df3-Jm-5Fb"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wut-WF-Xhz">
-                                <rect key="frame" x="40.5" y="403" width="325" height="200"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="Moe-GF-rCj"/>
-                                    <constraint firstAttribute="width" constant="325" id="nhu-rh-ecK"/>
-                                </constraints>
-                                <string key="text">Intervals: 80  "I know you noticed that delay after you swiped, I did too.. 🤦🏻‍♂️  I thought a CollectionView would be a great approach to this exercise, and although it was quick to get up and running, it doesn't appear that CollectionViews are the way to go if things need to scale."</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mon-dr-pdn">
+                                <rect key="frame" x="44.5" y="364" width="325" height="340"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rule 30: Large" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKq-Yw-w86" userLabel="Rule 30">
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="38.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="325" id="Cdc-6p-fTY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intervals: 80 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97V-Gr-bRd">
+                                        <rect key="frame" x="0.0" y="48.5" width="325" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oeo-pP-hFu">
+                                        <rect key="frame" x="0.0" y="79" width="325" height="261"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="325" id="6Bp-gI-ESj"/>
+                                        </constraints>
+                                        <mutableString key="text">"I know you noticed that delay after you swiped, I did too.. 🤦🏻‍♂️  I thought a CollectionView would be a great approach to this exercise, and although it was quick to get up and running, it doesn't appear that CollectionViews are the way to go if things need to scale."</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="JgF-JV-P04" firstAttribute="centerX" secondItem="4Lv-8y-5vN" secondAttribute="centerX" id="9wd-X3-q9I"/>
-                            <constraint firstItem="wut-WF-Xhz" firstAttribute="centerX" secondItem="f2J-pU-Twr" secondAttribute="centerX" constant="-4" id="KIE-V9-jBS"/>
-                            <constraint firstItem="f2J-pU-Twr" firstAttribute="centerX" secondItem="JgF-JV-P04" secondAttribute="centerX" id="WdR-Jn-ubd"/>
-                            <constraint firstItem="wut-WF-Xhz" firstAttribute="top" secondItem="f2J-pU-Twr" secondAttribute="bottom" id="aBh-V6-SHI"/>
-                            <constraint firstItem="f2J-pU-Twr" firstAttribute="top" secondItem="JgF-JV-P04" secondAttribute="bottom" constant="20" id="bOV-cF-8qe"/>
+                            <constraint firstItem="Mon-dr-pdn" firstAttribute="bottom" secondItem="4Lv-8y-5vN" secondAttribute="bottom" constant="20" id="BQS-ca-9OP"/>
                             <constraint firstItem="JgF-JV-P04" firstAttribute="centerY" secondItem="4Lv-8y-5vN" secondAttribute="centerY" constant="-100" id="dpd-cq-rQt"/>
+                            <constraint firstItem="Mon-dr-pdn" firstAttribute="centerX" secondItem="JgF-JV-P04" secondAttribute="centerX" id="kEK-7b-6sx"/>
+                            <constraint firstItem="Mon-dr-pdn" firstAttribute="top" secondItem="JgF-JV-P04" secondAttribute="bottom" constant="20" id="uTw-S6-TZT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4Lv-8y-5vN"/>
                     </view>
