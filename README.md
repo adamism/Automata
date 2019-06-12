@@ -1,14 +1,9 @@
 ### Readme
-
 ###### Automata
-
-An app written in Swift that implements Cellular Automaton Rule 30
-
-
+An app written in Swift that implements the Cellular Automaton Rule 30
 
 
 ###### Requirements
-
 * Provide a visual representation of the output
 * Demonstrate your ability to write unit tests
 * Show off your creativity
@@ -17,33 +12,22 @@ An app written in Swift that implements Cellular Automaton Rule 30
 * Include a README with a brief discussion of the implementation
 
 
-###### Architectural Concepts
-*
-*
-*
-*
-*
+###### Features
+* CollectionView rendering of Rule 30
+* PageViewController
+* Tight animations
+* 3rd Party Markdown framework
 
 
-###### Installation
-CocoaPods
+###### 3rd Party Frameworks
+https://github.com/CocoaPods/CocoaPods
+https://github.com/iwasrobbed/Down
 
 
-###### Roadmap
-
-
-###### License
-
-
-
-
-An app that implements the Rule 30 Cellular Automata
-
-
-topLeftCell != (topCell || topRightCell)
-
-I started off hoping there was some kind of crazy efficient approach to drawing these simple cells. After some initial research, it seemed to make the most sense to implement a CollectionView, as they are so commonly utilized and would make a great example.
-
-
-###### Readme
-After nailing down a CollectionView implementation, I wanted to make sure to provide the required README.md in the project, but also make sure that the user has everything they need right in the app. I utilized a framework called [Down](https://github.com/iwasrobbed/Down) that allowed me to pull the README.md file in as a string, and convert it into a View. 
+###### TODO
+* Fix lag on high interval renderings
+* Allow user to adjust the grid dimensions
+* Add loading timer on R30 views to measure changes
+* Show loading indicator on the ReadMe page while content is loading
+* Continue to add unit tests by creating mocks
+* Split unit tests into separate files
