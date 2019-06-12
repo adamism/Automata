@@ -40,13 +40,17 @@ class PageViewController: UIPageViewController {
 	
 	private func configurePageControl() {
 		// The total number of pages that are available is based on how many available colors we have.
-		pageControl = UIPageControl(frame: CGRect(x: 0,y: view.bounds.height - 250, width: view.bounds.width, height: 50))
-		self.pageControl.numberOfPages = orderedViewControllers.count
-		self.pageControl.currentPage = 0
-		self.pageControl.tintColor = UIColor.black
-		self.pageControl.pageIndicatorTintColor = UIColor.lightGray
-		self.pageControl.currentPageIndicatorTintColor = UIColor.black
-		self.view.addSubview(pageControl)
+		pageControl = UIPageControl(frame: CGRect(x: 0,y: 0, width: view.bounds.width, height: 50))
+		pageControl.numberOfPages = orderedViewControllers.count
+		pageControl.currentPage = 0
+		pageControl.tintColor = UIColor.black
+		pageControl.pageIndicatorTintColor = UIColor.lightGray
+		pageControl.currentPageIndicatorTintColor = UIColor.black
+		view.addSubview(pageControl)
+		
+		pageControl.translatesAutoresizingMaskIntoConstraints = false
+		pageControl.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
+		pageControl.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
 	}
 }
 

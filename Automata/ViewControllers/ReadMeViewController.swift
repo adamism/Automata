@@ -22,10 +22,16 @@ class ReadMeViewController: UIViewController {
 	}
 	
 	private func showReadMe() {
-		let downViewFrame = CGRect(x: 0, y: 0, width: markDownView.frame.width, height: markDownView.frame.height)
-		let downView = try? DownView(frame: downViewFrame, markdownString: getReadMeContents()) { }
-		
-		markDownView.addSubview(downView!)
+		if let downView = try? DownView(frame: .zero, markdownString: getReadMeContents(), openLinksInBrowser: true) {
+			markDownView.addSubview(downView)
+			downView.translatesAutoresizingMaskIntoConstraints = false
+			downView.topAnchor.constraint(equalTo: markDownView.topAnchor, constant: 0).isActive = true
+			downView.leftAnchor.constraint(equalTo: markDownView.leftAnchor, constant: 0).isActive = true
+			downView.bottomAnchor.constraint(equalTo: markDownView.bottomAnchor, constant: 0).isActive = true
+			downView.rightAnchor.constraint(equalTo: markDownView.rightAnchor, constant: 0).isActive = true
+		} else {
+			print("Failed to load DownView")
+		}
 	}
 
 	private func getReadMeContents() -> String {
