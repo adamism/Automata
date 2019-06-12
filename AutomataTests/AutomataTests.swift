@@ -31,7 +31,43 @@ class AutomataTests: XCTestCase {
         }
     }
 	
-// MARK: - R30CollectionViewCell Tests -
+// MARK: - CellManager Tests -
+	func testCellFor_Activates_OriginCell() {
+		//Given
+		let testLayout = UICollectionViewLayout()
+		let testCollectionView = UICollectionView(frame: CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: 0, height: 0)), collectionViewLayout: testLayout)
+		R30CollectionViewCell.register(with: testCollectionView)
+		let testCellManager = CellManager.init()
+		let testIndexPath =  IndexPath(item: 5, section: 0)
+		let testCellsPerRow = 10
+		
+		//When
+		let cell = testCellManager.cellFor(indexPath: testIndexPath, collectionView: testCollectionView, cellsPerRow: testCellsPerRow)
+		
+		//Then
+		XCTAssert(cell.backgroundColor == .black)
+	}
+
+	func testCellFor_DoesNotActivate_FirstRowNonMiddleCell() {
+		//Given
+		let testLayout = UICollectionViewLayout()
+		let testCollectionView = UICollectionView(frame: CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: 0, height: 0)), collectionViewLayout: testLayout)
+		R30CollectionViewCell.register(with: testCollectionView)
+		let testCellManager = CellManager.init()
+		let testIndexPath =  IndexPath(item: 3, section: 0)
+		let testCellsPerRow = 10
+		
+		//When
+		let cell = testCellManager.cellFor(indexPath: testIndexPath, collectionView: testCollectionView, cellsPerRow: testCellsPerRow)
+		
+		//Then
+		XCTAssertFalse(cell.backgroundColor == .black)
+	}
+	
+	
+	
+	
+	
 	func testIsOriginCell_NotMiddleCell() {
 		//Given
 		let testCellManager = CellManager.init()
