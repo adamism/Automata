@@ -2,21 +2,31 @@
 
 ###### Automata
 
-An app written in Swift that implements the Rule 30 Cellular Automata
+An app written in Swift that implements Cellular Automaton Rule 30
+
+
 
 
 ###### Requirements
 
-1. Provide a visual representation of the output
-2. Demonstrate your ability to write unit tests
-3. Show off your creativity
-4. Be architected with an eye toward easy iteration
-5. Exhibit a thoughtful and consistent code style
-6. Include a README with a brief discussion of the implementation
+* Provide a visual representation of the output
+* Demonstrate your ability to write unit tests
+* Show off your creativity
+* Be architected with an eye toward easy iteration
+* Exhibit a thoughtful and consistent code style
+* Include a README with a brief discussion of the implementation
+
+
+###### Architectural Concepts
+*
+*
+*
+*
+*
 
 
 ###### Installation
-Pods
+CocoaPods
 
 
 ###### Roadmap

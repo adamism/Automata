@@ -196,7 +196,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="v1Cell" id="4Ap-bg-BeC" customClass="V1CollectionViewCell" customModule="Automata" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="v1Cell" id="4Ap-bg-BeC" customClass="R30CollectionViewCell" customModule="Automata" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -278,7 +278,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="v1Cell" id="YJx-sy-1bH" customClass="V1CollectionViewCell" customModule="Automata" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="v1Cell" id="YJx-sy-1bH" customClass="R30CollectionViewCell" customModule="Automata" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -360,7 +360,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="v1Cell" id="oeW-4f-n49" customClass="V1CollectionViewCell" customModule="Automata" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="v1Cell" id="oeW-4f-n49" customClass="R30CollectionViewCell" customModule="Automata" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -391,7 +391,7 @@
                                     <constraint firstAttribute="height" constant="200" id="Moe-GF-rCj"/>
                                     <constraint firstAttribute="width" constant="325" id="nhu-rh-ecK"/>
                                 </constraints>
-                                <mutableString key="text">Intervals: 80  "I know you noticed that delay after you swiped, I did too.. 🤦🏻‍♂️  I thought a CollectionView would be a great approach to this exercise, and although it was quick to get up and running, it doesn't appear that CollectionViews are the way to go if things need to scale."</mutableString>
+                                <string key="text">Intervals: 80  "I know you noticed that delay after you swiped, I did too.. 🤦🏻‍♂️  I thought a CollectionView would be a great approach to this exercise, and although it was quick to get up and running, it doesn't appear that CollectionViews are the way to go if things need to scale."</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>

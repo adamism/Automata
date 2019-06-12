@@ -11,16 +11,16 @@ import UIKit
 class CellManager {
 	
 	func cellFor(indexPath: IndexPath, collectionView: UICollectionView, cellsPerRow: Int) -> UICollectionViewCell {
-		let cell = V1CollectionViewCell.dequeue(from: collectionView, at: indexPath)
+		let cell = R30CollectionViewCell.dequeue(from: collectionView, at: indexPath)
 		
 		if isAfterFirstRow(indexPath: indexPath, cellsPerRow: cellsPerRow) {
 			let topCellIndexPath = IndexPath.init(item: indexPath.item - cellsPerRow, section: indexPath.section)
 			let topLeftCellIndexPath = IndexPath.init(item: topCellIndexPath.item - 1, section: topCellIndexPath.section)
 			let topRightCellIndexPath = IndexPath.init(item: topCellIndexPath.item + 1, section: topCellIndexPath.section)
 			
-			let topCell = collectionView.cellForItem(at: topCellIndexPath) as! V1CollectionViewCell
-			let topLeftCell = collectionView.cellForItem(at: topLeftCellIndexPath) as! V1CollectionViewCell
-			let topRightCell = collectionView.cellForItem(at: topRightCellIndexPath) as! V1CollectionViewCell
+			let topCell = collectionView.cellForItem(at: topCellIndexPath) as! R30CollectionViewCell
+			let topLeftCell = collectionView.cellForItem(at: topLeftCellIndexPath) as! R30CollectionViewCell
+			let topRightCell = collectionView.cellForItem(at: topRightCellIndexPath) as! R30CollectionViewCell
 			
 			if topLeftCell.isActivated != (topCell.isActivated || topRightCell.isActivated) {
 				cell.isActivated = true

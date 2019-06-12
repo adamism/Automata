@@ -20,7 +20,7 @@ class R30ViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		V1CollectionViewCell.register(with: collectionView)
+		R30CollectionViewCell.register(with: collectionView)
 		
 		cellSize = collectionView.frame.width / CGFloat(cellsPerRow)
 		

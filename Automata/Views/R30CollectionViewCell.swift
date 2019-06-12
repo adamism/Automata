@@ -8,7 +8,7 @@
 
 import UIKit
 
-class V1CollectionViewCell: UICollectionViewCell {
+class R30CollectionViewCell: UICollectionViewCell {
 	
 	static let identifier = "caCell"
 	
@@ -25,8 +25,8 @@ class V1CollectionViewCell: UICollectionViewCell {
 		collectionView.register(self, forCellWithReuseIdentifier: identifier)
 	}
 	
-	static func dequeue(from collectionView: UICollectionView, at indexPath: IndexPath) -> V1CollectionViewCell {
-		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as? V1CollectionViewCell ?? V1CollectionViewCell()
+	static func dequeue(from collectionView: UICollectionView, at indexPath: IndexPath) -> R30CollectionViewCell {
+		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as? R30CollectionViewCell ?? R30CollectionViewCell()
 		cell.isActivated = false
 		return cell
 	}
