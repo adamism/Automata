@@ -20,8 +20,8 @@ An app written in Swift that implements the Cellular Automaton Rule 30
 
 
 ###### 3rd Party Frameworks
-https://github.com/CocoaPods/CocoaPods
-https://github.com/iwasrobbed/Down
+[CocoaPods](https://github.com/CocoaPods/CocoaPods)  
+[Down (Markdown Renderer)](https://github.com/iwasrobbed/Down)
 
 
 ###### TODO
