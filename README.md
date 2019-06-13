@@ -37,6 +37,10 @@ To wrap things up, the last page is a 3rd party Markdown rendering framework tha
 [Down (Markdown Renderer)](https://github.com/iwasrobbed/Down)
 
 
+##### Notes
+I tested the app build process on multiple machines, using various physical and simulator devices. The only issue I ran into was building it on a machine that had Xcode 10.1 installed. I made the app more backwards compatible by lowering the iOS Deployment Target from 12.2 to 11.0, which required dropping the Swift version from 5.0 to 4.2.
+
+
 ##### TODO
 
 * Research a more efficient approach for high interval renderings
