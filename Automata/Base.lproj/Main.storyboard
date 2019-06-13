@@ -251,7 +251,9 @@
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" notEnabled="YES"/>
                                         </accessibility>
-                                        <string key="text">This Full Grid implementation is a static, one-shot rendering of all the cells. It was my initial interpretation of the requirement and works well when the interval count is low.</string>
+                                        <string key="text">This Full Grid implementation is a static, one-shot rendering of all the cells. It was my initial interpretation of the requirement and works well when the interval count is low.
+
+However, after showing the Full Grid approach to a few peers, I learned they interpreted the requirements a little differently. They thought the grid should be generated incrementally to show the time interval progress.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -359,9 +361,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="325" id="uRj-wq-Fqn"/>
                                         </constraints>
-                                        <string key="text">However, after showing the Full Grid approach to a few peers, I learned they interpreted the requirements a little differently. They thought the grid should be generated incrementally to show the time interval progress.
-
-Because this approach uses a timer to build the grid one cell at a time, it produces a more organic feel, as you literally watch the algorithm figure out the next cell.</string>
+                                        <string key="text">Because this approach uses a timer to build the grid one cell at a time, it produces a more organic feel, as you literally watch the algorithm figure out the next cell.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -460,7 +460,7 @@ Because this approach uses a timer to build the grid one cell at a time, it prod
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" notEnabled="YES"/>
                                         </accessibility>
-                                        <string key="text">Moving on to a higher cell count Full Grid implementation, you probably noticed that the cost of generating the CollectionView is fairly high, and the delayed rendering is not a great experience.. 🤦🏻‍♂️  I thought a CollectionView would be a great approach to this exercise because it was quick to get up and running and had build-in access to IndexPath. But generating a high interval count full grid is noticeably laggy.</string>
+                                        <mutableString key="text">Moving on to a higher cell count Full Grid implementation, you probably noticed that the cost of generating the CollectionView is fairly high, and the delayed rendering is not a great experience.. 🤦🏻‍♂️  I thought a CollectionView would be a great approach to this exercise because it was quick to get up and running and had built-in access to IndexPath, but generating a high interval count Full Grid is noticeably laggy.</mutableString>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
