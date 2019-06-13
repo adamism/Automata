@@ -11,8 +11,8 @@
 		0127C95D22AD4E1200BE73A9 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127C95C22AD4E1200BE73A9 /* WelcomeViewController.swift */; };
 		0138540722AC230C00D6CDCD /* ReadMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138540622AC230C00D6CDCD /* ReadMeViewController.swift */; };
 		0169F57522ADCD6D0069C659 /* CellManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0169F57422ADCD6D0069C659 /* CellManager.swift */; };
+		01988F8B22B1DC5400F07838 /* R30ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01988F8A22B1DC5400F07838 /* R30ViewController.swift */; };
 		01BC1FDF22ABF70F001F632D /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BC1FDE22ABF70F001F632D /* PageViewController.swift */; };
-		01BC1FE122ABFF8D001F632D /* R30ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BC1FE022ABFF8D001F632D /* R30ViewController.swift */; };
 		01BC1FE322AC0CA2001F632D /* R30CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BC1FE222AC0CA2001F632D /* R30CollectionViewCell.swift */; };
 		01DA1CD322AAFE5B00158F6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA1CD222AAFE5B00158F6A /* AppDelegate.swift */; };
 		01DA1CD822AAFE5B00158F6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01DA1CD622AAFE5B00158F6A /* Main.storyboard */; };
@@ -49,8 +49,8 @@
 		0127C95C22AD4E1200BE73A9 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		0138540622AC230C00D6CDCD /* ReadMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMeViewController.swift; sourceTree = "<group>"; };
 		0169F57422ADCD6D0069C659 /* CellManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellManager.swift; sourceTree = "<group>"; };
+		01988F8A22B1DC5400F07838 /* R30ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R30ViewController.swift; sourceTree = "<group>"; };
 		01BC1FDE22ABF70F001F632D /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
-		01BC1FE022ABFF8D001F632D /* R30ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R30ViewController.swift; sourceTree = "<group>"; };
 		01BC1FE222AC0CA2001F632D /* R30CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R30CollectionViewCell.swift; sourceTree = "<group>"; };
 		01DA1CCF22AAFE5B00158F6A /* Automata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Automata.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01DA1CD222AAFE5B00158F6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 			children = (
 				0127C95A22AD469A00BE73A9 /* MainViewController.swift */,
 				01BC1FDE22ABF70F001F632D /* PageViewController.swift */,
-				01BC1FE022ABFF8D001F632D /* R30ViewController.swift */,
+				01988F8A22B1DC5400F07838 /* R30ViewController.swift */,
 				0138540622AC230C00D6CDCD /* ReadMeViewController.swift */,
 				0127C95C22AD4E1200BE73A9 /* WelcomeViewController.swift */,
 			);
@@ -435,10 +435,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01BC1FE122ABFF8D001F632D /* R30ViewController.swift in Sources */,
 				0169F57522ADCD6D0069C659 /* CellManager.swift in Sources */,
 				0127C95D22AD4E1200BE73A9 /* WelcomeViewController.swift in Sources */,
 				01DA1CDB22AAFE5B00158F6A /* Automata.xcdatamodeld in Sources */,
+				01988F8B22B1DC5400F07838 /* R30ViewController.swift in Sources */,
 				01DA1CD322AAFE5B00158F6A /* AppDelegate.swift in Sources */,
 				0138540722AC230C00D6CDCD /* ReadMeViewController.swift in Sources */,
 				01BC1FDF22ABF70F001F632D /* PageViewController.swift in Sources */,

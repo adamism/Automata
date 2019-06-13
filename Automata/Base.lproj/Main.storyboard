@@ -177,13 +177,13 @@
         <!--R30S View Controller Scene-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="rule30v1" id="BYZ-38-t0r" userLabel="R30S View Controller Scene" customClass="R30ViewController" customModule="Automata" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="rule30_1" id="BYZ-38-t0r" userLabel="R30S View Controller Scene" customClass="R30ViewController" customModule="Automata" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="718"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vVa-AF-VPN">
-                                <rect key="frame" x="57" y="184" width="300" height="160"/>
+                                <rect key="frame" x="44.5" y="184" width="325" height="160"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" priority="500" constant="300" id="OMd-N5-iBo"/>
@@ -214,7 +214,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="q6a-R1-1SU">
                                 <rect key="frame" x="44.5" y="364" width="325" height="340"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rule 30: Small" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Oz-Hu-DpN" userLabel="Rule 30">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rule 30 v1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Oz-Hu-DpN" userLabel="Rule 30">
                                         <rect key="frame" x="0.0" y="0.0" width="325" height="38.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="325" id="xub-65-9b3"/>
@@ -223,22 +223,23 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intervals: 20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9p-Cd-g5c">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intervals: 20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9p-Cd-g5c">
                                         <rect key="frame" x="0.0" y="48.5" width="325" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="1" green="0.18005963050000001" blue="0.26560406199999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="&quot;Nice. The CollectionView produces the grid pretty quickly - things are snappy.&quot;" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xsq-Mk-qYh">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Xsq-Mk-qYh">
                                         <rect key="frame" x="0.0" y="79" width="325" height="261"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="325" id="IuO-WN-O2D"/>
-                                        </constraints>
+                                        <string key="text">This v1 implementation is a static, one-shot rendering of all the cells. It was my initial interpretation of the requirement: 'Provide a visual representation of the output.'</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="Xsq-Mk-qYh" firstAttribute="width" relation="greaterThanOrEqual" secondItem="q6a-R1-1SU" secondAttribute="width" id="rZC-b5-pJg"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -248,6 +249,7 @@
                             <constraint firstItem="q6a-R1-1SU" firstAttribute="top" secondItem="vVa-AF-VPN" secondAttribute="bottom" constant="20" id="bTe-FX-aDc"/>
                             <constraint firstItem="q6a-R1-1SU" firstAttribute="centerX" secondItem="vVa-AF-VPN" secondAttribute="centerX" id="mmr-HK-GN1"/>
                             <constraint firstItem="q6a-R1-1SU" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="20" id="pDO-0p-yz7"/>
+                            <constraint firstItem="q6a-R1-1SU" firstAttribute="width" secondItem="vVa-AF-VPN" secondAttribute="width" id="rLK-Cu-R4c"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -255,6 +257,9 @@
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="cellsPerRow">
                             <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="r30ViewControllerVersion">
+                            <integer key="value" value="1"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
@@ -268,7 +273,7 @@
         <!--R30M View Controller Scene-->
         <scene sceneID="3Al-HO-zcF">
             <objects>
-                <viewController storyboardIdentifier="rule30v2" id="nAD-HM-Voq" userLabel="R30M View Controller Scene" customClass="R30ViewController" customModule="Automata" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="rule30_2" id="nAD-HM-Voq" userLabel="R30M View Controller Scene" customClass="R30ViewController" customModule="Automata" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aCf-vs-V6r">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="718"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -305,7 +310,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="og2-WY-Iyp">
                                 <rect key="frame" x="44.5" y="364" width="325" height="340"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rule 30: Medium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="onc-cL-pO4" userLabel="Rule 30">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rule 30 v2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="onc-cL-pO4" userLabel="Rule 30">
                                         <rect key="frame" x="0.0" y="0.0" width="325" height="38.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="325" id="XgS-fd-fU4"/>
@@ -314,18 +319,21 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intervals: 40 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQu-IM-RtU">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intervals: 20 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQu-IM-RtU">
                                         <rect key="frame" x="0.0" y="48.5" width="325" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="1" green="0.18005963050000001" blue="0.26560406199999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="&quot;A small delay when swiping is noticed when initiating the drag.&quot;" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vpB-MC-ztO">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vpB-MC-ztO">
                                         <rect key="frame" x="0.0" y="79" width="325" height="261"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="325" id="uRj-wq-Fqn"/>
                                         </constraints>
+                                        <string key="text">However, after showing the v1 approach to a few peers, I learned they interpreted the requirement a little differently.
+
+Because this approach uses a timer to build the grid in steps, it produces a more organic feel, as you watch the algorithm literally figure out the next cells.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -339,13 +347,17 @@
                             <constraint firstItem="og2-WY-Iyp" firstAttribute="centerX" secondItem="ISB-7e-ANX" secondAttribute="centerX" id="QwD-Kh-sjw"/>
                             <constraint firstItem="og2-WY-Iyp" firstAttribute="top" secondItem="ISB-7e-ANX" secondAttribute="bottom" constant="20" id="pHz-LU-VVh"/>
                             <constraint firstItem="ISB-7e-ANX" firstAttribute="centerX" secondItem="kT9-gk-gKT" secondAttribute="centerX" id="t1T-YT-NN2"/>
+                            <constraint firstItem="og2-WY-Iyp" firstAttribute="width" relation="greaterThanOrEqual" secondItem="ISB-7e-ANX" secondAttribute="width" id="zK1-wB-i32"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kT9-gk-gKT"/>
                     </view>
                     <size key="freeformSize" width="414" height="718"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="cellsPerRow">
-                            <integer key="value" value="40"/>
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="r30ViewControllerVersion">
+                            <integer key="value" value="2"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
@@ -359,7 +371,7 @@
         <!--R30L View Controller Scene-->
         <scene sceneID="6Nj-IJ-rfw">
             <objects>
-                <viewController storyboardIdentifier="rule30v3" id="Kai-mj-yoO" userLabel="R30L View Controller Scene" customClass="R30ViewController" customModule="Automata" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="rule30_3" id="Kai-mj-yoO" userLabel="R30L View Controller Scene" customClass="R30ViewController" customModule="Automata" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y83-fB-vLq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="718"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -396,28 +408,22 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mon-dr-pdn">
                                 <rect key="frame" x="44.5" y="364" width="325" height="340"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rule 30: Large" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKq-Yw-w86" userLabel="Rule 30">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rule 30 v2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKq-Yw-w86" userLabel="Rule 30">
                                         <rect key="frame" x="0.0" y="0.0" width="325" height="38.5"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="325" id="Cdc-6p-fTY"/>
-                                        </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intervals: 80 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97V-Gr-bRd">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intervals: 40 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97V-Gr-bRd">
                                         <rect key="frame" x="0.0" y="48.5" width="325" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="1" green="0.18005963050000001" blue="0.26560406199999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oeo-pP-hFu">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oeo-pP-hFu">
                                         <rect key="frame" x="0.0" y="79" width="325" height="261"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="325" id="6Bp-gI-ESj"/>
-                                        </constraints>
-                                        <mutableString key="text">"I know you noticed that delay after you swiped, I did too.. 🤦🏻‍♂️  I thought a CollectionView would be a great approach to this exercise, and although it was quick to get up and running, it doesn't appear that CollectionViews are the way to go if things need to scale."</mutableString>
+                                        <string key="text">Unfortunately, the cost of doing this with a CollectionView is high.. 🤦🏻‍♂️  I thought a CollectionView would be a great approach to this exercise, and although it was quick to get up and running, it doesn't appear that they are able to scale.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -428,6 +434,7 @@
                         <constraints>
                             <constraint firstItem="JgF-JV-P04" firstAttribute="centerX" secondItem="4Lv-8y-5vN" secondAttribute="centerX" id="9wd-X3-q9I"/>
                             <constraint firstItem="Mon-dr-pdn" firstAttribute="bottom" secondItem="4Lv-8y-5vN" secondAttribute="bottom" constant="20" id="BQS-ca-9OP"/>
+                            <constraint firstItem="Mon-dr-pdn" firstAttribute="width" relation="greaterThanOrEqual" secondItem="JgF-JV-P04" secondAttribute="width" id="JFU-QX-vUO"/>
                             <constraint firstItem="JgF-JV-P04" firstAttribute="centerY" secondItem="4Lv-8y-5vN" secondAttribute="centerY" constant="-100" id="dpd-cq-rQt"/>
                             <constraint firstItem="Mon-dr-pdn" firstAttribute="centerX" secondItem="JgF-JV-P04" secondAttribute="centerX" id="kEK-7b-6sx"/>
                             <constraint firstItem="Mon-dr-pdn" firstAttribute="top" secondItem="JgF-JV-P04" secondAttribute="bottom" constant="20" id="uTw-S6-TZT"/>
@@ -437,7 +444,10 @@
                     <size key="freeformSize" width="414" height="718"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="cellsPerRow">
-                            <integer key="value" value="80"/>
+                            <integer key="value" value="40"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="r30ViewControllerVersion">
+                            <integer key="value" value="2"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>

@@ -14,9 +14,9 @@ class PageViewController: UIPageViewController {
 	private var pageControl = UIPageControl()
 	lazy private var orderedViewControllers: [UIViewController] = {
 		return [newVc(viewController: "welcome"),
-				newVc(viewController: "rule30v1"),
-				newVc(viewController: "rule30v2"),
-				newVc(viewController: "rule30v3"),
+				newVc(viewController: "rule30_1"),
+				newVc(viewController: "rule30_2"),
+				newVc(viewController: "rule30_3"),
 				newVc(viewController: "readMe")]
 	}()
 
