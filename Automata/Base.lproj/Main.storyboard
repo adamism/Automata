@@ -78,19 +78,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="718"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Thanks so much for the opportunity to work on an exercise like this. Functions that relate to visuals are right up my alley!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UYM-IP-PUS">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UYM-IP-PUS">
                                 <rect key="frame" x="57" y="326.5" width="300" height="75"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="Sm0-mw-Y2u"/>
                                     <constraint firstAttribute="height" constant="75" id="xzV-mK-HWU"/>
                                 </constraints>
+                                <string key="text">Thanks so much for the opportunity to work on a practical exercise like this. Functions that relate to visuals are right up my alley!</string>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hey there!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOH-wR-onj">
                                 <rect key="frame" x="62" y="279" width="290" height="50"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="BGl-Yv-yWT"/>
                                     <constraint firstAttribute="width" constant="290" id="Xmn-y0-VXN"/>
@@ -102,6 +109,9 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="And it was a blast going down so many rabbit holes 👍🏼" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mmp-NB-cGc">
                                 <rect key="frame" x="57" y="564" width="300" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="oQ5-ql-h3z"/>
                                     <constraint firstAttribute="width" constant="300" id="y0T-9w-INe"/>
@@ -142,7 +152,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hht-ff-7Pz">
-                                <rect key="frame" x="0.0" y="44" width="384" height="548"/>
+                                <rect key="frame" x="0.0" y="44" width="394" height="548"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f4I-Jn-WD2" userLabel="Bottom Line">
@@ -161,7 +171,7 @@
                             <constraint firstItem="hht-ff-7Pz" firstAttribute="leading" secondItem="G83-t5-JJ0" secondAttribute="leading" id="YaW-xS-0mR"/>
                             <constraint firstItem="G83-t5-JJ0" firstAttribute="trailing" secondItem="f4I-Jn-WD2" secondAttribute="trailing" constant="20" id="hQq-pn-X89"/>
                             <constraint firstItem="f4I-Jn-WD2" firstAttribute="top" secondItem="hht-ff-7Pz" secondAttribute="bottom" id="rJM-ol-zts"/>
-                            <constraint firstItem="G83-t5-JJ0" firstAttribute="trailing" secondItem="hht-ff-7Pz" secondAttribute="trailing" constant="30" id="uWz-n0-3hH"/>
+                            <constraint firstItem="G83-t5-JJ0" firstAttribute="trailing" secondItem="hht-ff-7Pz" secondAttribute="trailing" constant="20" id="uWz-n0-3hH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="G83-t5-JJ0"/>
                     </view>
@@ -172,18 +182,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J3a-fg-3qF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3009" y="173"/>
+            <point key="canvasLocation" x="3764" y="175"/>
         </scene>
-        <!--R30S View Controller Scene-->
+        <!--R30_1 View Controller Scene-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="rule30_1" id="BYZ-38-t0r" userLabel="R30S View Controller Scene" customClass="R30ViewController" customModule="Automata" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="rule30_1" id="BYZ-38-t0r" userLabel="R30_1 View Controller Scene" customClass="R30ViewController" customModule="Automata" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="718"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vVa-AF-VPN">
-                                <rect key="frame" x="44.5" y="184" width="325" height="160"/>
+                                <rect key="frame" x="44.5" y="134" width="325" height="160"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" priority="500" constant="300" id="OMd-N5-iBo"/>
@@ -212,10 +222,13 @@
                                 </connections>
                             </collectionView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="q6a-R1-1SU">
-                                <rect key="frame" x="44.5" y="364" width="325" height="340"/>
+                                <rect key="frame" x="44.5" y="314" width="325" height="390"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rule 30 v1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Oz-Hu-DpN" userLabel="Rule 30">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rule 30: Full Grid" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Oz-Hu-DpN" userLabel="Rule 30">
                                         <rect key="frame" x="0.0" y="0.0" width="325" height="38.5"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                        </accessibility>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="325" id="xub-65-9b3"/>
                                         </constraints>
@@ -225,14 +238,20 @@
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intervals: 20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9p-Cd-g5c">
                                         <rect key="frame" x="0.0" y="48.5" width="325" height="20.5"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                        </accessibility>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="1" green="0.18005963050000001" blue="0.26560406199999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Xsq-Mk-qYh">
-                                        <rect key="frame" x="0.0" y="79" width="325" height="261"/>
+                                        <rect key="frame" x="0.0" y="79" width="325" height="311"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <string key="text">This v1 implementation is a static, one-shot rendering of all the cells. It was my initial interpretation of the requirement: 'Provide a visual representation of the output.'</string>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" notEnabled="YES"/>
+                                        </accessibility>
+                                        <string key="text">This Full Grid implementation is a static, one-shot rendering of all the cells. It was my initial interpretation of the requirement and works well when the interval count is low.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -244,8 +263,8 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="vVa-AF-VPN" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-100" id="9sy-bM-WnD"/>
                             <constraint firstItem="vVa-AF-VPN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9zZ-5P-SUM"/>
+                            <constraint firstItem="q6a-R1-1SU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-50" id="Add-iv-7Pz"/>
                             <constraint firstItem="q6a-R1-1SU" firstAttribute="top" secondItem="vVa-AF-VPN" secondAttribute="bottom" constant="20" id="bTe-FX-aDc"/>
                             <constraint firstItem="q6a-R1-1SU" firstAttribute="centerX" secondItem="vVa-AF-VPN" secondAttribute="centerX" id="mmr-HK-GN1"/>
                             <constraint firstItem="q6a-R1-1SU" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="20" id="pDO-0p-yz7"/>
@@ -270,16 +289,16 @@
             </objects>
             <point key="canvasLocation" x="753.62318840579712" y="172.76785714285714"/>
         </scene>
-        <!--R30M View Controller Scene-->
+        <!--R30_2 View Controller Scene-->
         <scene sceneID="3Al-HO-zcF">
             <objects>
-                <viewController storyboardIdentifier="rule30_2" id="nAD-HM-Voq" userLabel="R30M View Controller Scene" customClass="R30ViewController" customModule="Automata" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="rule30_2" id="nAD-HM-Voq" userLabel="R30_2 View Controller Scene" customClass="R30ViewController" customModule="Automata" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aCf-vs-V6r">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="718"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ISB-7e-ANX">
-                                <rect key="frame" x="57" y="184" width="300" height="160"/>
+                                <rect key="frame" x="57" y="134" width="300" height="160"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" priority="500" constant="300" id="D8T-GH-wAW"/>
@@ -308,10 +327,13 @@
                                 </connections>
                             </collectionView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="og2-WY-Iyp">
-                                <rect key="frame" x="44.5" y="364" width="325" height="340"/>
+                                <rect key="frame" x="44.5" y="314" width="325" height="390"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rule 30 v2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="onc-cL-pO4" userLabel="Rule 30">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rule 30: Single Cell" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="onc-cL-pO4" userLabel="Rule 30">
                                         <rect key="frame" x="0.0" y="0.0" width="325" height="38.5"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                        </accessibility>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="325" id="XgS-fd-fU4"/>
                                         </constraints>
@@ -321,19 +343,25 @@
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intervals: 20 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQu-IM-RtU">
                                         <rect key="frame" x="0.0" y="48.5" width="325" height="20.5"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                        </accessibility>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="1" green="0.18005963050000001" blue="0.26560406199999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vpB-MC-ztO">
-                                        <rect key="frame" x="0.0" y="79" width="325" height="261"/>
+                                        <rect key="frame" x="0.0" y="79" width="325" height="311"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" notEnabled="YES"/>
+                                        </accessibility>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="325" id="uRj-wq-Fqn"/>
                                         </constraints>
-                                        <string key="text">However, after showing the v1 approach to a few peers, I learned they interpreted the requirement a little differently.
+                                        <string key="text">However, after showing the Full Grid approach to a few peers, I learned they interpreted the requirements a little differently. They thought the grid should be generated incrementally to show the time interval progress.
 
-Because this approach uses a timer to build the grid in steps, it produces a more organic feel, as you watch the algorithm literally figure out the next cells.</string>
+Because this approach uses a timer to build the grid one cell at a time, it produces a more organic feel, as you literally watch the algorithm figure out the next cell.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -343,7 +371,7 @@ Because this approach uses a timer to build the grid in steps, it produces a mor
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="og2-WY-Iyp" firstAttribute="bottom" secondItem="kT9-gk-gKT" secondAttribute="bottom" constant="20" id="6go-pY-Hts"/>
-                            <constraint firstItem="ISB-7e-ANX" firstAttribute="centerY" secondItem="kT9-gk-gKT" secondAttribute="centerY" constant="-100" id="Ip1-5H-OeB"/>
+                            <constraint firstItem="og2-WY-Iyp" firstAttribute="top" secondItem="kT9-gk-gKT" secondAttribute="centerY" constant="-50" id="7lU-ME-0dn"/>
                             <constraint firstItem="og2-WY-Iyp" firstAttribute="centerX" secondItem="ISB-7e-ANX" secondAttribute="centerX" id="QwD-Kh-sjw"/>
                             <constraint firstItem="og2-WY-Iyp" firstAttribute="top" secondItem="ISB-7e-ANX" secondAttribute="bottom" constant="20" id="pHz-LU-VVh"/>
                             <constraint firstItem="ISB-7e-ANX" firstAttribute="centerX" secondItem="kT9-gk-gKT" secondAttribute="centerX" id="t1T-YT-NN2"/>
@@ -368,16 +396,16 @@ Because this approach uses a timer to build the grid in steps, it produces a mor
             </objects>
             <point key="canvasLocation" x="1504" y="173"/>
         </scene>
-        <!--R30L View Controller Scene-->
+        <!--R30_3 View Controller Scene-->
         <scene sceneID="6Nj-IJ-rfw">
             <objects>
-                <viewController storyboardIdentifier="rule30_3" id="Kai-mj-yoO" userLabel="R30L View Controller Scene" customClass="R30ViewController" customModule="Automata" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="rule30_3" id="Kai-mj-yoO" userLabel="R30_3 View Controller Scene" customClass="R30ViewController" customModule="Automata" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y83-fB-vLq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="718"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JgF-JV-P04">
-                                <rect key="frame" x="57" y="184" width="300" height="160"/>
+                                <rect key="frame" x="57" y="134" width="300" height="160"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" priority="500" constant="300" id="RVP-A9-w0k"/>
@@ -406,24 +434,33 @@ Because this approach uses a timer to build the grid in steps, it produces a mor
                                 </connections>
                             </collectionView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mon-dr-pdn">
-                                <rect key="frame" x="44.5" y="364" width="325" height="340"/>
+                                <rect key="frame" x="44.5" y="314" width="325" height="390"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rule 30 v2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKq-Yw-w86" userLabel="Rule 30">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rule 30: Full Grid" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKq-Yw-w86" userLabel="Rule 30">
                                         <rect key="frame" x="0.0" y="0.0" width="325" height="38.5"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                        </accessibility>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intervals: 40 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97V-Gr-bRd">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intervals: 60 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97V-Gr-bRd">
                                         <rect key="frame" x="0.0" y="48.5" width="325" height="20.5"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                        </accessibility>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="1" green="0.18005963050000001" blue="0.26560406199999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oeo-pP-hFu">
-                                        <rect key="frame" x="0.0" y="79" width="325" height="261"/>
+                                        <rect key="frame" x="0.0" y="79" width="325" height="311"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <string key="text">Unfortunately, the cost of doing this with a CollectionView is high.. 🤦🏻‍♂️  I thought a CollectionView would be a great approach to this exercise, and although it was quick to get up and running, it doesn't appear that they are able to scale.</string>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" notEnabled="YES"/>
+                                        </accessibility>
+                                        <string key="text">Moving on to a higher cell count Full Grid implementation, you probably noticed that the cost of generating the CollectionView is fairly high, and the delayed rendering is not a great experience.. 🤦🏻‍♂️  I thought a CollectionView would be a great approach to this exercise because it was quick to get up and running and had build-in access to IndexPath. But generating a high interval count full grid is noticeably laggy.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -435,11 +472,112 @@ Because this approach uses a timer to build the grid in steps, it produces a mor
                             <constraint firstItem="JgF-JV-P04" firstAttribute="centerX" secondItem="4Lv-8y-5vN" secondAttribute="centerX" id="9wd-X3-q9I"/>
                             <constraint firstItem="Mon-dr-pdn" firstAttribute="bottom" secondItem="4Lv-8y-5vN" secondAttribute="bottom" constant="20" id="BQS-ca-9OP"/>
                             <constraint firstItem="Mon-dr-pdn" firstAttribute="width" relation="greaterThanOrEqual" secondItem="JgF-JV-P04" secondAttribute="width" id="JFU-QX-vUO"/>
-                            <constraint firstItem="JgF-JV-P04" firstAttribute="centerY" secondItem="4Lv-8y-5vN" secondAttribute="centerY" constant="-100" id="dpd-cq-rQt"/>
+                            <constraint firstItem="Mon-dr-pdn" firstAttribute="top" secondItem="4Lv-8y-5vN" secondAttribute="centerY" constant="-50" id="Plr-sa-oL3"/>
                             <constraint firstItem="Mon-dr-pdn" firstAttribute="centerX" secondItem="JgF-JV-P04" secondAttribute="centerX" id="kEK-7b-6sx"/>
                             <constraint firstItem="Mon-dr-pdn" firstAttribute="top" secondItem="JgF-JV-P04" secondAttribute="bottom" constant="20" id="uTw-S6-TZT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4Lv-8y-5vN"/>
+                    </view>
+                    <size key="freeformSize" width="414" height="718"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cellsPerRow">
+                            <integer key="value" value="60"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="r30ViewControllerVersion">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="collectionView" destination="JgF-JV-P04" id="XLi-Xz-fdZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DXc-gB-dEf" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2258" y="175"/>
+        </scene>
+        <!--R30_4 View Controller Scene-->
+        <scene sceneID="Ucu-GJ-qmr">
+            <objects>
+                <viewController storyboardIdentifier="rule30_4" id="Ik4-sf-dY6" userLabel="R30_4 View Controller Scene" customClass="R30ViewController" customModule="Automata" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BKF-0I-e1V">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="718"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Yfg-kg-7Jo">
+                                <rect key="frame" x="57" y="134" width="300" height="160"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="500" constant="300" id="Saq-tW-gpg"/>
+                                    <constraint firstAttribute="height" constant="160" id="p4k-fI-eUg"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="QDp-jp-lgR">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="v1Cell" id="BcZ-GJ-6Sc" customClass="R30CollectionViewCell" customModule="Automata" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Ik4-sf-dY6" id="Tn5-z5-88q"/>
+                                    <outlet property="delegate" destination="Ik4-sf-dY6" id="Ctd-7I-tVb"/>
+                                    <outlet property="prefetchDataSource" destination="Ik4-sf-dY6" id="OqU-Wd-QIj"/>
+                                </connections>
+                            </collectionView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="upp-Ju-mSM">
+                                <rect key="frame" x="44.5" y="314" width="325" height="390"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rule 30: Single Cell" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffI-Dc-82f" userLabel="Rule 30">
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="38.5"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intervals: 40 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iIf-EK-UH4">
+                                        <rect key="frame" x="0.0" y="48.5" width="325" height="20.5"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.18005963050000001" blue="0.26560406199999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="f49-TM-30e">
+                                        <rect key="frame" x="0.0" y="79" width="325" height="311"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" notEnabled="YES"/>
+                                        </accessibility>
+                                        <string key="text">Eventhough it takes much longer to populate the entire grid, the Single Cell approach provides a much different experience. 
+
+I think both the Full Grid and Single Cell approaches demonstrate different use cases, and can be beneficial in different situations.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="upp-Ju-mSM" firstAttribute="bottom" secondItem="kgk-cd-gCY" secondAttribute="bottom" constant="20" id="7ML-bC-DND"/>
+                            <constraint firstItem="upp-Ju-mSM" firstAttribute="top" secondItem="Yfg-kg-7Jo" secondAttribute="bottom" constant="20" id="8Vh-cF-3ZJ"/>
+                            <constraint firstItem="upp-Ju-mSM" firstAttribute="top" secondItem="kgk-cd-gCY" secondAttribute="centerY" constant="-50" id="EMT-nh-S2U"/>
+                            <constraint firstItem="Yfg-kg-7Jo" firstAttribute="centerX" secondItem="kgk-cd-gCY" secondAttribute="centerX" id="Ng3-oU-6FR"/>
+                            <constraint firstItem="upp-Ju-mSM" firstAttribute="width" relation="greaterThanOrEqual" secondItem="Yfg-kg-7Jo" secondAttribute="width" id="SZ6-17-mT3"/>
+                            <constraint firstItem="upp-Ju-mSM" firstAttribute="centerX" secondItem="Yfg-kg-7Jo" secondAttribute="centerX" id="gIJ-vk-L2L"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kgk-cd-gCY"/>
                     </view>
                     <size key="freeformSize" width="414" height="718"/>
                     <userDefinedRuntimeAttributes>
@@ -451,12 +589,12 @@ Because this approach uses a timer to build the grid in steps, it produces a mor
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
-                        <outlet property="collectionView" destination="JgF-JV-P04" id="XLi-Xz-fdZ"/>
+                        <outlet property="collectionView" destination="Yfg-kg-7Jo" id="eJD-ai-j4f"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DXc-gB-dEf" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dtb-jw-4Hz" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2258" y="175"/>
+            <point key="canvasLocation" x="3012" y="175"/>
         </scene>
     </scenes>
     <resources>

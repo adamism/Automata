@@ -17,6 +17,7 @@ class PageViewController: UIPageViewController {
 				newVc(viewController: "rule30_1"),
 				newVc(viewController: "rule30_2"),
 				newVc(viewController: "rule30_3"),
+				newVc(viewController: "rule30_4"),
 				newVc(viewController: "readMe")]
 	}()
 
