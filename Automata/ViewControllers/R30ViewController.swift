@@ -54,7 +54,7 @@ class R30ViewController: UIViewController {
 	}
 	
 	private func generateTimedGrid() {
-		timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: Selector("addRow"), userInfo: nil, repeats: true)
+		timer = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: Selector("addCell"), userInfo: nil, repeats: true)
 	}
 	
 	private func stopTimer() {
@@ -68,7 +68,7 @@ class R30ViewController: UIViewController {
 		}
 	}
 	
-	@objc public func addRow() {
+	@objc public func addCell() {
 		if cellTotal < (cellsPerRow * cellsPerRow / 2) {
 			cellTotal += 1
 			collectionView.reloadData()
