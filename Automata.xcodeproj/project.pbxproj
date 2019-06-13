@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0127C95B22AD469B00BE73A9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127C95A22AD469A00BE73A9 /* MainViewController.swift */; };
 		0127C95D22AD4E1200BE73A9 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127C95C22AD4E1200BE73A9 /* WelcomeViewController.swift */; };
+		01326E7622B2654300AEFD7C /* R30CollectionViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01326E7522B2654300AEFD7C /* R30CollectionViewCellTests.swift */; };
 		0138540722AC230C00D6CDCD /* ReadMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138540622AC230C00D6CDCD /* ReadMeViewController.swift */; };
 		0169F57522ADCD6D0069C659 /* CellManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0169F57422ADCD6D0069C659 /* CellManager.swift */; };
 		01988F8B22B1DC5400F07838 /* R30ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01988F8A22B1DC5400F07838 /* R30ViewController.swift */; };
@@ -19,7 +20,7 @@
 		01DA1CDB22AAFE5B00158F6A /* Automata.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 01DA1CD922AAFE5B00158F6A /* Automata.xcdatamodeld */; };
 		01DA1CDD22AAFE5C00158F6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01DA1CDC22AAFE5C00158F6A /* Assets.xcassets */; };
 		01DA1CE022AAFE5C00158F6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01DA1CDE22AAFE5C00158F6A /* LaunchScreen.storyboard */; };
-		01DA1CEB22AAFE5C00158F6A /* AutomataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA1CEA22AAFE5C00158F6A /* AutomataTests.swift */; };
+		01DA1CEB22AAFE5C00158F6A /* CellManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA1CEA22AAFE5C00158F6A /* CellManagerTests.swift */; };
 		01DA1CF622AAFE5C00158F6A /* AutomataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA1CF522AAFE5C00158F6A /* AutomataUITests.swift */; };
 		01E77C7022AF3B3A009B565F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 01E77C6F22AF3B39009B565F /* README.md */; };
 		30D6874C4A7DBD82664A6682 /* Pods_Automata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37AB74C434CA1EC56DDEEF5F /* Pods_Automata.framework */; };
@@ -47,6 +48,7 @@
 /* Begin PBXFileReference section */
 		0127C95A22AD469A00BE73A9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0127C95C22AD4E1200BE73A9 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		01326E7522B2654300AEFD7C /* R30CollectionViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R30CollectionViewCellTests.swift; sourceTree = "<group>"; };
 		0138540622AC230C00D6CDCD /* ReadMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMeViewController.swift; sourceTree = "<group>"; };
 		0169F57422ADCD6D0069C659 /* CellManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellManager.swift; sourceTree = "<group>"; };
 		01988F8A22B1DC5400F07838 /* R30ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R30ViewController.swift; sourceTree = "<group>"; };
@@ -60,7 +62,7 @@
 		01DA1CDF22AAFE5C00158F6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01DA1CE122AAFE5C00158F6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01DA1CE622AAFE5C00158F6A /* AutomataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutomataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		01DA1CEA22AAFE5C00158F6A /* AutomataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomataTests.swift; sourceTree = "<group>"; };
+		01DA1CEA22AAFE5C00158F6A /* CellManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellManagerTests.swift; sourceTree = "<group>"; };
 		01DA1CEC22AAFE5C00158F6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01DA1CF122AAFE5C00158F6A /* AutomataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutomataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01DA1CF522AAFE5C00158F6A /* AutomataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomataUITests.swift; sourceTree = "<group>"; };
@@ -175,8 +177,9 @@
 		01DA1CE922AAFE5C00158F6A /* AutomataTests */ = {
 			isa = PBXGroup;
 			children = (
-				01DA1CEA22AAFE5C00158F6A /* AutomataTests.swift */,
+				01DA1CEA22AAFE5C00158F6A /* CellManagerTests.swift */,
 				01DA1CEC22AAFE5C00158F6A /* Info.plist */,
+				01326E7522B2654300AEFD7C /* R30CollectionViewCellTests.swift */,
 			);
 			path = AutomataTests;
 			sourceTree = "<group>";
@@ -451,7 +454,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01DA1CEB22AAFE5C00158F6A /* AutomataTests.swift in Sources */,
+				01326E7622B2654300AEFD7C /* R30CollectionViewCellTests.swift in Sources */,
+				01DA1CEB22AAFE5C00158F6A /* CellManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
